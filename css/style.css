@@ -48,6 +48,12 @@ a, #go-to-top-btn { opacity: 0.8; transition: 0.3s; }
 a:hover, #go-to-top-btn:hover { opacity: 1; }
 
 /* Header styles */
+.my_photo { width: 50%; }
+@media screen and (max-width: 425px) {
+    .my_photo { width: 75%; }
+}
+header h2 { font-size: 4em; }
+ion-icon[name="calendar"] { font-size: 2em; }
 
 /* Main sections styles */
 #go-to-top-btn {
