@@ -100,6 +100,12 @@ section ion-icon { font-size: 1.5em; }
     background-color: var(--color1);
 }
 
+#skills .list-group-item { 
+    font-size: 1.2em;
+    background-color: #eee; 
+}
+ion-icon[name="checkmark-circle"] { color: green; }
+
 #go-to-top-btn {
     z-index: 80;
     border: none;
