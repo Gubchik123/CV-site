@@ -44,7 +44,11 @@ header, footer, .navbar {
 }
 section { padding: 80px 0; }
 
-a, #go-to-top-btn { opacity: 0.8; transition: 0.3s; }
+a, #go-to-top-btn { 
+    color: black;
+    opacity: 0.8; 
+    transition: 0.3s; 
+}
 a:hover, #go-to-top-btn:hover { opacity: 1; }
 
 /* Header styles */
@@ -76,7 +80,25 @@ ion-icon[name="calendar"] { font-size: 2em; }
 .top-menu li a:hover::after { transform: scale(1); }
 
 /* Main sections styles */
+section ion-icon { font-size: 1.5em; }
 #contacts, #skills, #education { background-color: #eee; }
+
+.circle_icon {
+    width: 80px;
+    height: 80px;
+    margin: 30px auto 15px;
+    border-radius: 50%;
+    border: 3px solid var(--color2);
+    background-color: #fff;
+}
+.circle_icon ion-icon { font-size: 2em; }
+
+.line {
+    width: 100px;
+    height: 3px;
+    margin: 10px auto;
+    background-color: var(--color1);
+}
 
 #go-to-top-btn {
     z-index: 80;
