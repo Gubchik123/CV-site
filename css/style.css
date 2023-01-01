@@ -35,7 +35,7 @@
 }
 
 /* Global styles */
-header, footer {
+header, footer, .navbar {
     background: var(--color1);
     background: -moz-linear-gradient(left,  var(--color1) 0%, var(--color2) 100%);
     background: -webkit-linear-gradient(left,  var(--color1) 0%,var(--color2) 100%);
@@ -54,6 +54,26 @@ a:hover, #go-to-top-btn:hover { opacity: 1; }
 }
 header h2 { font-size: 4em; }
 ion-icon[name="calendar"] { font-size: 2em; }
+
+.sticky-top { box-shadow: 0 10px 20px var(--bs-dark); }
+
+.navbar-nav { 
+    font-size: 1.3em;
+    font-weight: 700; 
+}
+
+.top-menu a,
+.top-menu a:hover { color: var(--bs-light); }
+.top-menu li a::after {
+    content: "";
+    display: block;
+    width: 100%;
+    background-color: var(--bs-light);
+    height: 1px;
+    transition: all 0.5s;
+    transform: scale(0);
+}
+.top-menu li a:hover::after { transform: scale(1); }
 
 /* Main sections styles */
 #go-to-top-btn {
