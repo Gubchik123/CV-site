@@ -1,7 +1,7 @@
 /* CSS variables */
 :root {
-    --color1: #58ACFA;
-    --color2: #380B61;
+    --color1: #3499FF;
+    --color2: #3A3985;
 }
 
 .color1 { color: var(--color1); }
