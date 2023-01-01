@@ -1,0 +1,54 @@
+/* CSS variables */
+:root {
+    --color1: #58ACFA;
+    --color2: #380B61;
+}
+
+.color1 { color: var(--color1); }
+.color2 { color: var(--color2); }
+
+/* Custom scrollbar */
+::-webkit-scrollbar { 
+    width: 15px; 
+    background-color: var(--bs-dark);
+}
+::-webkit-scrollbar-track { 
+    border-radius: 7px;
+    background-color: var(--bs-dark); 
+}
+::-webkit-scrollbar-thumb {
+    opacity: 0.7;
+    border-radius: 7px;
+    background: darkgray; 
+}
+::-webkit-scrollbar-thumb:hover { opacity: 1; }
+
+/* Custom text selection */
+::-moz-selection {
+    color: white;
+    background: #2f3542;
+}
+
+::selection {
+    color: white;
+    background: #2f3542;
+}
+
+/* Global styles */
+header, footer {
+    background: var(--color1);
+    background: -moz-linear-gradient(left,  var(--color1) 0%, var(--color2) 100%);
+    background: -webkit-linear-gradient(left,  var(--color1) 0%,var(--color2) 100%);
+    background: linear-gradient(to right,  var(--color1) 0%,var(--color2) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=var(--color1), endColorstr=var(--color1),GradientType=1 );
+}
+section { padding: 100px 0; height: 1000px; }
+
+a { opacity: 0.8; transition: 0.3s; }
+a:hover { opacity: 1; }
+
+/* Header styles */
+
+/* Main sections styles */
+
+/* Footer styles */
