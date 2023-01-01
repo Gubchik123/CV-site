@@ -42,7 +42,7 @@ header, footer, .navbar {
     background: linear-gradient(to right,  var(--color1) 0%,var(--color2) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=var(--color1), endColorstr=var(--color1),GradientType=1 );
 }
-section { padding: 100px 0; height: 1000px; }
+section { padding: 80px 0; }
 
 a, #go-to-top-btn { opacity: 0.8; transition: 0.3s; }
 a:hover, #go-to-top-btn:hover { opacity: 1; }
@@ -76,6 +76,8 @@ ion-icon[name="calendar"] { font-size: 2em; }
 .top-menu li a:hover::after { transform: scale(1); }
 
 /* Main sections styles */
+#contacts, #skills, #education { background-color: #eee; }
+
 #go-to-top-btn {
     z-index: 80;
     border: none;
