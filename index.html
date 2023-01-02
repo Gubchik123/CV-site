@@ -55,7 +55,12 @@
 		<div class="sticky-top">
 			<nav class="navbar navbar-expand-lg navbar-dark">
 				<div class="container-fluid">
-					<a class="navbar-brand" href="#"></a>
+					<!-- To move the burger button to the right -->
+					<a href="#" class="navbar-brand"></a>
+					<!-- Name (navbar brand) is hidden at the start -->
+					<a id="navbar-brand" class="navbar-brand d-none" href="#">
+						<b>Nikita Hubariev</b>
+					</a>
 					<!-- Burger button -->
 					<button
 						class="navbar-toggler"
@@ -74,6 +79,7 @@
 						class="collapse navbar-collapse"
 					>
 						<ul
+							id="navbar-nav"
 							class="navbar-nav list-group-horizontal-md top-menu me-auto ms-auto justify-content-center text-center"
 						>
 							<li class="nav-item me-lg-2 me-sm-4">
@@ -525,7 +531,7 @@
 						</h6>
 						<h4 class="px-2">
 							The bot for searching information about the weather
-							in cities of Ukraine and Europe (there is mailing)
+							in cities of Ukraine and Europe
 						</h4>
 					</div>
 				</div>
