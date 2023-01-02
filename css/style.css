@@ -129,6 +129,8 @@ ion-icon[name="checkmark-circle"] { color: green; }
     .project { width: 100%; }
 }
 
+#education li { font-size: 1.4em; }
+
 #go-to-top-btn {
     z-index: 80;
     border: none;
