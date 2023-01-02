@@ -100,6 +100,17 @@ section ion-icon { font-size: 1.5em; }
     background-color: var(--color1);
 }
 
+#about-me p { 
+    font-size: 1.7em; 
+    text-indent: 30px;
+}
+@media screen and (max-width: 992px) {
+    #about-me p { font-size: 1.3em; }
+}
+@media screen and (max-width: 576px) {
+    #about-me p { font-size: 1.1em; }
+}
+
 #skills .list-group-item { 
     font-size: 1.2em;
     background-color: #eee; 
