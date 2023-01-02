@@ -7,8 +7,7 @@ go_to_top_btn.addEventListener("click", function () {
 	document.documentElement.scrollTop = 0; // For Chrome, Firefox and IE
 });
 
-// When the user scrolls down 550px from the top of the document, show the button
-window.onscroll = function () {
+function check_on_scroll() {
 	if (
 		document.body.scrollTop > 550 ||
 		document.documentElement.scrollTop > 550
@@ -22,4 +21,9 @@ window.onscroll = function () {
 		navbar_nav.classList.add("me-auto");
 		navbar_brand.classList.add("d-none");
 	}
-};
+}
+
+// When the user scrolls down 550px from the top of the document, show the button
+window.addEventListener("scroll", check_on_scroll);
+
+check_on_scroll(); // Check the window position at startup
