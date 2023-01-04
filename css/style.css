@@ -148,6 +148,11 @@ ion-icon[name="checkmark-circle"] { color: green; }
     #education ul { font-size: 1.1em; }
 }
 
+form { width: 50%; }
+@media screen and (max-width: 576px) {
+    form { width: 100%; }
+}
+
 #go-to-top-btn {
     z-index: 80;
     border: none;

@@ -98,27 +98,34 @@
 							class="navbar-nav list-group-horizontal-md top-menu me-auto ms-auto justify-content-center text-center"
 						>
 							<li class="nav-item me-lg-2 me-sm-4">
-								<a class="nav-link" href="#contacts"
-									>Contacts</a
-								>
+								<a class="nav-link" href="#contacts">
+									Contacts
+								</a>
 							</li>
 							<li class="nav-item me-lg-2 me-sm-4">
-								<a class="nav-link" href="#about-me"
-									>About me</a
-								>
+								<a class="nav-link" href="#about-me">
+									About me
+								</a>
 							</li>
 							<li class="nav-item me-lg-2 me-sm-4">
-								<a class="nav-link" href="#skills">Skills</a>
+								<a class="nav-link" href="#skills"> 
+                                    Skills 
+                                </a>
 							</li>
 							<li class="nav-item me-lg-2 me-sm-4">
-								<a class="nav-link" href="#projects"
-									>Projects</a
-								>
+								<a class="nav-link" href="#projects">
+									Projects
+								</a>
 							</li>
 							<li class="nav-item me-lg-2 me-sm-4">
-								<a class="nav-link" href="#education"
-									>Education</a
-								>
+								<a class="nav-link" href="#education">
+									Education
+								</a>
+							</li>
+							<li class="nav-item me-lg-2 me-sm-4">
+								<a class="nav-link" href="#write-me">
+									Write Me
+								</a>
 							</li>
 						</ul>
 					</div>
@@ -619,12 +626,60 @@
 			</div>
 		</section>
 
+		<!-- The block with form for sending email to me -->
+		<section id="write-me">
+			<div class="container">
+				<div class="row">
+					<!-- The title of the "Education" block  -->
+					<div class="col-12">
+						<h2 class="text-center text-uppercase color2 mb-5">
+							Write Me
+						</h2>
+					</div>
+				</div>
+				<!-- The content of the "Education" block -->
+				<div class="row">
+					<div
+						class="col-12 d-flex justify-content-center align-items-center"
+					>
+						<!-- Form for sending email -->
+						<form
+							class="bg-secondary rounded-4 d-flex flex-column justify-content-center px-3 py-4"
+						>
+							<input
+								required
+								type="text"
+								name="subject"
+								placeholder="Subject"
+								class="form-control mb-3"
+							/>
+							<textarea
+								required
+								rows="6"
+								name="body"
+								placeholder="Body"
+								class="form-control mb-4"
+							></textarea>
+							<div class="text-center">
+								<input
+									name="send"
+									value="Send"
+									type="button"
+									class="btn btn-lg btn-success"
+								/>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
 		<!-- Go to top button -->
 		<button title="Go to top" id="go-to-top-btn">
 			<ion-icon name="arrow-up-outline"></ion-icon>
 		</button>
 
-		<!-- The site header -->
+		<!-- The site footer -->
 		<footer class="py-4">
 			<div class="container">
 				<div class="row">
@@ -690,5 +745,15 @@
 			nomodule
 			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
 		></script>
+
+		<!-- Script for sending email -->
+		<script>
+			const form = document.forms[0];
+			form.send.addEventListener("click", function () {
+				window.open(
+					`mailto:nikita.hubariev@gmail.com?subject=${form.subject.value}&body=${form.body.value}`
+				);
+			});
+		</script>
 	</body>
 </html>
