@@ -108,9 +108,7 @@
 								</a>
 							</li>
 							<li class="nav-item me-lg-2 me-sm-4">
-								<a class="nav-link" href="#skills"> 
-                                    Skills 
-                                </a>
+								<a class="nav-link" href="#skills"> Skills </a>
 							</li>
 							<li class="nav-item me-lg-2 me-sm-4">
 								<a class="nav-link" href="#projects">
@@ -644,22 +642,28 @@
 					>
 						<!-- Form for sending email -->
 						<form
-							class="bg-secondary rounded-4 d-flex flex-column justify-content-center px-3 py-4"
+							class="bg-secondary rounded-3 d-flex flex-column justify-content-center px-3 py-4"
 						>
-							<input
-								required
-								type="text"
-								name="subject"
-								placeholder="Subject"
-								class="form-control mb-3"
-							/>
-							<textarea
-								required
-								rows="6"
-								name="body"
-								placeholder="Body"
-								class="form-control mb-4"
-							></textarea>
+							<div class="form-floating mb-3">
+								<input
+									required
+									type="text"
+									name="subject"
+									placeholder="Subject"
+									class="form-control"
+								/>
+								<label for="floatingInput">Subject</label>
+							</div>
+							<div class="form-floating mb-4">
+								<textarea
+									required
+									name="body"
+									placeholder="Body"
+									class="form-control"
+									style="height: 150px"
+								></textarea>
+								<label for="floatingPassword">Body</label>
+							</div>
 							<div class="text-center">
 								<input
 									name="send"
