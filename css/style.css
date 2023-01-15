@@ -42,7 +42,10 @@ header, footer, .navbar {
     background: linear-gradient(to right,  var(--color1) 0%,var(--color2) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=var(--color1), endColorstr=var(--color1),GradientType=1 );
 }
-section { padding: 80px 0; }
+section { 
+    padding: 80px 0; 
+    scroll-margin-top: 50px;
+}
 
 .content-center {
     display: flex;
