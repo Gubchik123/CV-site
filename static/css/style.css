@@ -68,7 +68,10 @@ a:hover, #go-to-top-btn:hover { opacity: 1; }
 header h2 { font-size: 4em; }
 ion-icon[name="calendar"] { font-size: 2em; }
 
-.sticky-top { box-shadow: 0 10px 20px var(--bs-dark); }
+.sticky-top { 
+    margin-top: -1px;
+    box-shadow: 0 10px 20px var(--bs-dark); 
+}
 
 .navbar-nav { 
     font-size: 1.3em;
