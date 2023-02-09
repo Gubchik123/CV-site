@@ -68,6 +68,7 @@ a:hover, #go-to-top-btn:hover { opacity: 1; }
     .my_photo { width: 75%; }
 }
 header h2 { font-size: 4em; }
+ion-icon[name="document-text"] { font-size: 1.5em; }
 ion-icon[name="calendar"] { font-size: 2em; }
 
 .sticky-top { 
