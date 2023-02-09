@@ -4,3 +4,5 @@ _My CV site_
 ### Demo
 
 Click **<a href="https://nikita-hubariev-cv.netlify.app/" target="_blank">here</a>** to open my CV site
+
+<img title="Demo" alt="Demo image" src="./static/images/demo.jpg">
