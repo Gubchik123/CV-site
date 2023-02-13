@@ -119,6 +119,17 @@ section ion-icon { font-size: 1.5em; }
     background-color: var(--color1);
 }
 
+.modal-content { background-color: #eee; }
+.modal-content ion-icon { font-size: 2em; }
+
+.modal-body div { width: 50%; }
+@media screen and (max-width: 576px) {
+    .modal-body div { width: 75%; }
+}
+
+ion-icon[name="call"] { color: #8d3cd3; }
+ion-icon[name="navigate-circle"] { color: #2798cf; }
+
 #about-me p { 
     font-size: 1.7em; 
     text-indent: 30px;

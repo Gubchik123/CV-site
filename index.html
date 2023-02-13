@@ -209,9 +209,93 @@
 							<ion-icon name="call-outline"></ion-icon>
 						</div>
 						<h5>
-							<a href="tel:+380673980978">Phone number</a>
+							<a
+								href=""
+								data-bs-toggle="modal"
+								data-bs-target="#phoneModal"
+							>
+								Phone number
+							</a>
 						</h5>
 						<div class="line"></div>
+
+						<!-- phoneModal -->
+						<div
+							tabindex="-1"
+							id="phoneModal"
+							class="modal fade"
+							aria-hidden="true"
+							aria-labelledby="phoneModalLabel"
+						>
+							<div class="modal-dialog modal-dialog-centered">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h1
+											id="phoneModalLabel"
+											class="modal-title fs-3"
+										>
+											Your choice
+										</h1>
+										<button
+											type="button"
+											class="btn-close"
+											aria-label="Close"
+											data-bs-dismiss="modal"
+										></button>
+									</div>
+									<div
+										class="modal-body d-flex flex-column align-items-center"
+									>
+										<div
+											class="mb-3 fs-4 content-center justify-content-between"
+										>
+											<ion-icon
+												name="phone-portrait-outline"
+											></ion-icon>
+											<a
+												target="_blank"
+												href="tel:+380673980978"
+											>
+												Phone
+											</a>
+										</div>
+										<div
+											class="mb-3 fs-4 content-center justify-content-between"
+										>
+											<ion-icon name="call"></ion-icon>
+											<a
+												target="_blank"
+												href="viber://chat?number=380673980978"
+											>
+												Viber
+											</a>
+										</div>
+										<div
+											class="mb-3 fs-4 content-center justify-content-between"
+										>
+											<ion-icon
+												name="navigate-circle"
+											></ion-icon>
+											<a
+												target="_blank"
+												href="tg://resolve?domain=Gubchik123"
+											>
+												Telegram
+											</a>
+										</div>
+									</div>
+									<div class="modal-footer">
+										<button
+											type="button"
+											data-bs-dismiss="modal"
+											class="btn btn-secondary btn-lg"
+										>
+											Close
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 					<!-- The link to my profile on "LinkedIn" -->
 					<div class="col-xl-4 col-md-6 col-sm-12 text-center">
