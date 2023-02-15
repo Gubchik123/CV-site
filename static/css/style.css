@@ -127,8 +127,8 @@ section ion-icon { font-size: 1.5em; }
     .modal-body div { width: 75%; }
 }
 
-ion-icon[name="call"] { color: #8d3cd3; }
-ion-icon[name="navigate-circle"] { color: #2798cf; }
+ion-icon[name="logo-whatsapp"] { color: #8d3cd3; }
+.modal-body ion-icon[name="navigate-circle"] { color: #2798cf; }
 
 #about-me p { 
     font-size: 1.7em; 
