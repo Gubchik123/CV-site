@@ -78,10 +78,11 @@
 							</div>
 							<div class="mt-5 d-flex justify-content-center">
 								<a
-									target="_blank"
-									title="CV in PDF"
+									href=""
+									title="Resume in PDF"
+									data-bs-toggle="modal"
+									data-bs-target="#fileModal"
 									class="write-me-btn me-3 btn btn-lg btn-secondary text-white content-center"
-									href="https://drive.google.com/file/d/1KC1H2Lz0LwND8n6KBD2v40dTbw5m44Ol/view?usp=sharing"
 								>
 									<ion-icon name="document-text"></ion-icon>
 								</a>
@@ -91,6 +92,44 @@
 								>
 									Write Me
 								</a>
+
+								<!-- fileModal -->
+								<div
+									tabindex="-1"
+									id="fileModal"
+									aria-hidden="true"
+									class="modal fade"
+									aria-labelledby="fileModalLabel"
+								>
+									<div class="modal-dialog modal-fullscreen">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h1
+													id="fileModalLabel"
+													class="modal-title fs-3 text-black"
+												>
+													Embedded PDF resume
+												</h1>
+												<button
+													type="button"
+													class="btn-close"
+													aria-label="Close"
+													data-bs-dismiss="modal"
+												></button>
+											</div>
+											<div
+												class="modal-body overflow-hidden"
+											>
+												<iframe
+													width="100%"
+													height="100%"
+													allow="autoplay"
+													src="https://drive.google.com/file/d/1KC1H2Lz0LwND8n6KBD2v40dTbw5m44Ol/preview"
+												></iframe>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -262,7 +301,9 @@
 										<div
 											class="mb-3 fs-4 content-center justify-content-between"
 										>
-                                            <ion-icon name="logo-whatsapp"></ion-icon>
+											<ion-icon
+												name="logo-whatsapp"
+											></ion-icon>
 											<a
 												target="_blank"
 												href="viber://chat?number=380673980978"
