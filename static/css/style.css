@@ -53,7 +53,7 @@ section {
     justify-content: center;
 }
 
-.write-me-btn { opacity: 1; }
+.opacity-1 { opacity: 1; }
 
 a, #go-to-top-btn { 
     color: black;
