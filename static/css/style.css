@@ -144,8 +144,10 @@ ion-icon[name="checkmark-circle"] { color: green; }
     justify-content: space-between;
 
     width: 30%;
+    transition: 0.5s;
     border: 3px solid var(--color1); 
 }
+.project:hover { box-shadow: 0 0 20px gray; }
 
 #education ul { font-size: 1.4em; }
 #education ul ul { font-size: 1em; }
