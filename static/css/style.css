@@ -64,9 +64,6 @@ a:hover, #go-to-top-btn:hover { opacity: 1; }
 
 /* Header styles */
 .my_photo { width: 50%; }
-@media screen and (max-width: 425px) {
-    .my_photo { width: 75%; }
-}
 header h2 { font-size: 4em; }
 ion-icon[name="document-text"] { font-size: 1.5em; }
 ion-icon[name="calendar"] { font-size: 2em; }
@@ -123,9 +120,6 @@ section ion-icon { font-size: 1.5em; }
 .modal-content ion-icon { font-size: 2em; }
 
 .modal-body div { width: 50%; }
-@media screen and (max-width: 576px) {
-    .modal-body div { width: 75%; }
-}
 
 ion-icon[name="logo-whatsapp"] { color: #8d3cd3; }
 .modal-body ion-icon[name="navigate-circle"] { color: #2798cf; }
@@ -133,12 +127,6 @@ ion-icon[name="logo-whatsapp"] { color: #8d3cd3; }
 #about-me p { 
     font-size: 1.7em; 
     text-indent: 30px;
-}
-@media screen and (max-width: 992px) {
-    #about-me p { font-size: 1.3em; }
-}
-@media screen and (max-width: 576px) {
-    #about-me p { font-size: 1.1em; }
 }
 
 #skills .list-group-item { 
@@ -158,20 +146,11 @@ ion-icon[name="checkmark-circle"] { color: green; }
     width: 30%;
     border: 3px solid var(--color1); 
 }
-@media screen and (max-width: 992px) {
-    .project { width: 100%; }
-}
 
 #education ul { font-size: 1.4em; }
 #education ul ul { font-size: 1em; }
-@media screen and (max-width: 576px) {
-    #education ul { font-size: 1.1em; }
-}
 
 form { width: 50%; }
-@media screen and (max-width: 576px) {
-    form { width: 100%; }
-}
 
 #go-to-top-btn {
     z-index: 80;
@@ -194,10 +173,22 @@ footer {
 }
 
 .social_networks a ion-icon { font-size: 2em; }
-@media screen and (max-width: 375px) {
+
+/* Media queries */
+@media screen and (max-width: 425px) {
+    .my_photo { width: 75%; }
     .social_networks a ion-icon { font-size: 1.3em; }
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 576px) {
+    .modal-body div { width: 75%; }
+    #about-me p { font-size: 1.1em; }
+    #education ul { font-size: 1.1em; }
+    form { width: 100%; }
     footer { z-index: 90; }
+}
+
+@media screen and (max-width: 992px) {
+    #about-me p { font-size: 1.3em; }
+    .project { width: 100%; }
 }
