@@ -53,6 +53,8 @@ section {
     justify-content: center;
 }
 
+.disabled { cursor: not-allowed; }
+
 .opacity-1 { opacity: 1; }
 
 a, #go-to-top-btn { 
@@ -63,6 +65,12 @@ a, #go-to-top-btn {
 a:hover, #go-to-top-btn:hover { opacity: 1; }
 
 /* Header styles */
+.language_switcher { 
+    top: 20px; 
+    right: 20px;
+}
+.ua_switcher { right: 60px; }
+
 .my_photo { width: 50%; }
 header h2 { font-size: 4em; }
 ion-icon[name="document-text"] { font-size: 1.5em; }
@@ -108,6 +116,12 @@ section ion-icon { font-size: 1.5em; }
     background-color: #fff;
 }
 .circle_icon ion-icon { font-size: 2em; }
+
+.language_switcher { 
+    margin: 0;
+    width: 30px;
+    height: 30px; 
+}
 
 .line {
     width: 100px;
