@@ -1,11 +1,30 @@
 /* CSS variables */
 :root {
+    --text-color: var(--bs-dark);
+
     --color1: #3499FF;
     --color2: #3A3985;
+
+    --bg-color-1: white;
+    --bg-color-2: #eee;
 }
+:root[theme="dark"] {
+    --text-color: #fafafa;
+
+    --color1: #8278DA;
+    --color2: #121C84;
+
+    --bg-color-1: #343a40;
+    --bg-color-2: var(--bs-secondary);
+}
+
+.text-color { color: var(--text-color); }
 
 .color1 { color: var(--color1); }
 .color2 { color: var(--color2); }
+
+.bg1 { background-color: var(--bg-color-1); }
+.bg2 { background-color: var(--bg-color-2); }
 
 /* Custom scrollbar */
 ::-webkit-scrollbar { 
@@ -34,7 +53,47 @@
     background: #2f3542;
 }
 
+/* Theme toggler */
+#theme_toggler, .language_switcher { top: 20px; }
+
+#theme_toggler { left: 20px; }
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+.label {
+    background-color: #343a40;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+    transform: scale(1.5);
+}
+.label .ball {
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+.checkbox:checked + .label .ball { transform: translateX(24px); }
+
+ion-icon[name="sunny"],
+ion-icon[name="moon"] {
+    color: yellow;
+}
+
 /* Global styles */
+body, .list-group-item { color: var(--text-color); }
 header, footer, .navbar {
     background: var(--color1);
     background: -moz-linear-gradient(left,  var(--color1) 0%, var(--color2) 100%);
@@ -46,6 +105,8 @@ section {
     padding: 80px 0; 
     scroll-margin-top: 50px;
 }
+body, section { transition: background 0.2s linear; }
+
 
 .content-center {
     display: flex;
@@ -55,20 +116,21 @@ section {
 
 .disabled { cursor: not-allowed; }
 
-.opacity-1 { opacity: 1; }
+.opacity-1, #go-to-top-btn:hover { opacity: 1; }
 
-a, #go-to-top-btn { 
-    color: black;
+a, #go-to-top-btn, #theme_toggler { 
     opacity: 0.8; 
     transition: 0.3s; 
+    color: var(--text-color);
 }
-a:hover, #go-to-top-btn:hover { opacity: 1; }
+a:hover,
+#theme_toggler:hover { 
+    opacity: 1; 
+    color: var(--text-color);
+}
 
 /* Header styles */
-.language_switcher { 
-    top: 20px; 
-    right: 20px;
-}
+.language_switcher { right: 20px; }
 .ua_switcher { right: 60px; }
 
 .my_photo { width: 50%; }
@@ -105,7 +167,6 @@ ion-icon[name="calendar"] { font-size: 2em; }
 
 /* Main sections styles */
 section ion-icon { font-size: 1.5em; }
-#contacts, #skills, #education { background-color: #eee; }
 
 .circle_icon {
     width: 80px;
@@ -115,7 +176,10 @@ section ion-icon { font-size: 1.5em; }
     border: 3px solid var(--color2);
     background-color: #fff;
 }
-.circle_icon ion-icon { font-size: 2em; }
+.circle_icon ion-icon { 
+    color: black;
+    font-size: 2em; 
+}
 
 .language_switcher { 
     margin: 0;
@@ -148,9 +212,16 @@ ion-icon[name="logo-whatsapp"] { color: #8d3cd3; }
     align-items: center;
 
     font-size: 1.2em;
-    background-color: #eee; 
+    background-color: var(--bg-color-2); 
 }
 ion-icon[name="checkmark-circle"] { color: green; }
+
+ion-icon[name="checkmark-circle"], 
+ion-icon[name="logo-whatsapp"], 
+.modal-body ion-icon[name="navigate-circle"] {
+    border-radius: 50%;
+    background-color: #fff;
+}
 
 .project { 
     display: flex;
@@ -166,7 +237,10 @@ ion-icon[name="checkmark-circle"] { color: green; }
 #education ul { font-size: 1.4em; }
 #education ul ul { font-size: 1em; }
 
-form { width: 50%; }
+form { 
+    width: 50%; 
+    color: black;
+}
 
 #go-to-top-btn {
     z-index: 80;

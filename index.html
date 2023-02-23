@@ -45,24 +45,40 @@
 		<link rel="stylesheet" type="text/css" href="./static/css/style.css" />
 	</head>
 	<body>
+		<!-- Theme toggler -->
+		<div id="theme_toggler" class="position-absolute">
+			<input
+				type="checkbox"
+				id="theme_toggler_btn"
+				class="checkbox opacity-0 position-absolute"
+			/>
+			<label class="label" for="theme_toggler_btn">
+				<ion-icon name="sunny"></ion-icon>
+				<ion-icon name="moon"></ion-icon>
+				<div class="ball"></div>
+			</label>
+		</div>
+
+		<!-- Language switchers -->
+		<a href="#" class="switch-language-btn">
+			<img
+				alt="Language image"
+				src="./static/images/languages/ukrainian.webp"
+				class="circle_icon language_switcher ua_switcher position-absolute"
+			/>
+		</a>
+		<a href="#" class="switch-language-btn">
+			<img
+				alt="Language image"
+				src="./static/images/languages/english.webp"
+				class="circle_icon language_switcher en_switcher position-absolute"
+			/>
+		</a>
+
 		<!-- The site header -->
 		<header class="py-5 border-bottom border-3">
-			<a href="#" class="switch-language-btn">
-				<img
-					alt="Language image"
-					src="./static/images/languages/ukrainian.webp"
-					class="circle_icon language_switcher ua_switcher position-absolute"
-				/>
-			</a>
-			<a href="#" class="switch-language-btn">
-				<img
-					alt="Language image"
-					src="./static/images/languages/english.webp"
-					class="circle_icon language_switcher en_switcher position-absolute"
-				/>
-			</a>
 			<div class="container">
-				<div class="row content-center my-3">
+				<div class="row content-center mb-3 mt-4">
 					<!-- The block for my photo -->
 					<div class="col-md-6 col-sm-12 mb-4">
 						<div class="d-flex justify-content-center">
@@ -125,11 +141,11 @@
 								>
 									<div class="modal-dialog modal-fullscreen">
 										<div class="modal-content">
-											<div class="modal-header">
+											<div class="modal-header bg2">
 												<h1
 													key="pdf-resume"
 													id="fileModalLabel"
-													class="modal-title fs-3 text-black lang"
+													class="modal-title text-color fs-3 lang"
 												>
 													Embedded PDF resume
 												</h1>
@@ -141,7 +157,7 @@
 												></button>
 											</div>
 											<div
-												class="modal-body overflow-hidden"
+												class="modal-body bg2 overflow-hidden"
 											>
 												<iframe
 													width="100%"
@@ -260,14 +276,14 @@
 		</div>
 
 		<!-- The block with my contacts -->
-		<section id="contacts">
+		<section class="bg2" id="contacts">
 			<div class="container">
 				<div class="row">
 					<!-- The title of the "Contacts" block  -->
 					<div class="col-12">
 						<h2
 							key="contacts"
-							class="text-center text-uppercase color1 mb-5 lang"
+							class="text-center text-uppercase color2 mb-5 lang"
 						>
 							Contacts
 						</h2>
@@ -317,13 +333,13 @@
 						<div
 							tabindex="-1"
 							id="phoneModal"
-							class="modal fade"
 							aria-hidden="true"
+							class="modal fade"
 							aria-labelledby="phoneModalLabel"
 						>
 							<div class="modal-dialog modal-dialog-centered">
 								<div class="modal-content">
-									<div class="modal-header">
+									<div class="modal-header bg2">
 										<h1
 											key="your-choice"
 											id="phoneModalLabel"
@@ -339,7 +355,7 @@
 										></button>
 									</div>
 									<div
-										class="modal-body d-flex flex-column align-items-center"
+										class="modal-body bg2 d-flex flex-column align-items-center"
 									>
 										<div
 											class="mb-3 fs-4 content-center justify-content-between"
@@ -384,12 +400,12 @@
 											</a>
 										</div>
 									</div>
-									<div class="modal-footer">
+									<div class="modal-footer bg2">
 										<button
 											key="close"
 											type="button"
 											data-bs-dismiss="modal"
-											class="btn btn-secondary btn-lg lang"
+											class="btn btn-danger btn-lg lang"
 										>
 											Close
 										</button>
@@ -444,7 +460,7 @@
 					<div class="col-12">
 						<h2
 							key="languages"
-							class="text-center text-uppercase color1 my-5 lang"
+							class="text-center text-uppercase color2 my-5 lang"
 						>
 							Languages
 						</h2>
@@ -485,14 +501,14 @@
 		</section>
 
 		<!-- The block about me -->
-		<section id="about-me">
+		<section class="bg1" id="about-me">
 			<div class="container">
 				<div class="row">
 					<!-- The title of the "About me" block  -->
 					<div class="col-12">
 						<h2
 							key="about-me"
-							class="text-center text-uppercase color2 mb-5 lang"
+							class="text-center text-uppercase color1 mb-5 lang"
 						>
 							About me
 						</h2>
@@ -535,14 +551,14 @@
 		</section>
 
 		<!-- The block with my skills -->
-		<section id="skills">
+		<section class="bg2" id="skills">
 			<div class="container">
 				<div class="row">
 					<!-- The title of the "Skills" block  -->
 					<div class="col-12">
 						<h2
 							key="skills"
-							class="text-center text-uppercase color1 mb-5 lang"
+							class="text-center text-uppercase color2 mb-5 lang"
 						>
 							Skills
 						</h2>
@@ -677,14 +693,14 @@
 		</section>
 
 		<!-- The block with my projects -->
-		<section id="projects">
+		<section class="bg1" id="projects">
 			<div class="container">
 				<div class="row">
 					<!-- The title of the "Projects" block  -->
 					<div class="col-12">
 						<h2
 							key="projects"
-							class="text-center text-uppercase color2 mb-5 lang"
+							class="text-center text-uppercase color1 mb-5 lang"
 						>
 							Projects
 						</h2>
@@ -812,14 +828,14 @@
 		</section>
 
 		<!-- The block with my education: courses and books -->
-		<section id="education">
+		<section class="bg2" id="education">
 			<div class="container">
 				<div class="row">
 					<!-- The title of the "Education" block  -->
 					<div class="col-12">
 						<h2
 							key="education"
-							class="text-center text-uppercase color1 mb-5 lang"
+							class="text-center text-uppercase color2 mb-5 lang"
 						>
 							Education
 						</h2>
@@ -920,14 +936,14 @@
 		</section>
 
 		<!-- The block with form for sending email to me -->
-		<section id="write-me">
+		<section class="bg1" id="write-me">
 			<div class="container">
 				<div class="row">
 					<!-- The title of the "Education" block  -->
 					<div class="col-12">
 						<h2
 							key="write-me"
-							class="text-center text-uppercase color2 mb-5 lang"
+							class="text-center text-uppercase color1 mb-5 lang"
 						>
 							Write Me
 						</h2>
@@ -1065,11 +1081,12 @@
 		></script>
 
 		<!-- My scripts -->
-		<script src="./static/js/go_to_top_btn.js"></script>
+		<script src="./static/js/toggle_theme.js"></script>
 		<script src="./static/js/phone_number.js"></script>
+		<script src="./static/js/go_to_top_btn.js"></script>
 		<script type="module" src="./static/js/switch_language.js"></script>
 
-		<!-- Script for sending email -->
+		<!-- Script to send email -->
 		<script>
 			const form = document.forms[0];
 			form.send.addEventListener("click", function () {
