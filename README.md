@@ -1,8 +1,27 @@
-<a href="https://nikita-hubariev-cv.netlify.app/" target="_blank"><img title="Project board" alt="Header image" src="./static/images/Project-header.png"></a>
+<a href="https://nikita-hubariev-cv.netlify.app/" target="_blank"><img title="Project board" alt="Header image" src="./md_images/header.png"></a>
 _My CV site_
 
-### Demo
+## Demo
 
 Click **<a href="https://nikita-hubariev-cv.netlify.app/" target="_blank">here</a>** to open my CV site
 
-<img title="Demo" alt="Demo image" src="./static/images/demo.jpg">
+<a href="https://nikita-hubariev-cv.netlify.app/" target="_blank"><img title="Demo" alt="Demo image" src="./md_images/light-demo-en.jpg"></a>
+
+## Features
+
+There are the following sections on the site:
+
+-   Contacts
+-   About me
+-   Skills
+-   Projects
+-   Education
+-   Write me
+
+### Dark theme
+There is a theme toggler between light and dark themes.
+<a href="https://nikita-hubariev-cv.netlify.app/" target="_blank"><img title="Demo" alt="Demo image" src="./md_images/dark-demo-en.jpg"></a>
+
+### Translation into Ukrainian
+There is the ability to switch the site into Ukrainian. 
+<a href="https://nikita-hubariev-cv.netlify.app/" target="_blank"><img title="Demo" alt="Demo image" src="./md_images/dark-demo-ua.jpg"></a>
