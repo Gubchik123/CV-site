@@ -26,6 +26,9 @@
 .bg1 { background-color: var(--bg-color-1); }
 .bg2 { background-color: var(--bg-color-2); }
 
+.bg1 h2 { color: var(--color1); }
+.bg2 h2 { color: var(--color2); }
+
 /* Custom scrollbar */
 ::-webkit-scrollbar { 
     width: 15px; 
