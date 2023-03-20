@@ -2,7 +2,6 @@ export const ua_lang_dict = {
 	"full-name": "Губарєв Микита",
 	"position": "Python веб-розробник",
 	"birthday": "31 травня, 2006 (16 років)",
-	"pdf-resume": "Вбудоване резюме PDF",
 	"write-me": "Напишіть мені",
 	"contacts": "Контакти",
 	"about-me": "Про мене",

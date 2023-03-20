@@ -116,10 +116,12 @@
 							<div class="mt-5 d-flex justify-content-center">
 								<a
 									href=""
-									title="Resume in PDF"
 									data-bs-toggle="modal"
 									data-bs-target="#fileModal"
-									class="btn btn-lg btn-secondary me-3 opacity-1 text-white content-center"
+									class="fileModal-link btn btn-lg btn-secondary me-3 opacity-1 text-white content-center"
+									modal-title-en="Embedded PDF resume"
+									modal-title-ua="Вбудоване резюме PDF"
+									modal-file-link="https://drive.google.com/file/d/1KC1H2Lz0LwND8n6KBD2v40dTbw5m44Ol/preview"
 								>
 									<ion-icon name="document-text"></ion-icon>
 								</a>
@@ -130,45 +132,6 @@
 								>
 									Write Me
 								</a>
-
-								<!-- fileModal -->
-								<div
-									tabindex="-1"
-									id="fileModal"
-									aria-hidden="true"
-									class="modal fade"
-									aria-labelledby="fileModalLabel"
-								>
-									<div class="modal-dialog modal-fullscreen">
-										<div class="modal-content">
-											<div class="modal-header bg2">
-												<h1
-													key="pdf-resume"
-													id="fileModalLabel"
-													class="modal-title text-color fs-3 lang"
-												>
-													Embedded PDF resume
-												</h1>
-												<button
-													type="button"
-													class="btn-close"
-													aria-label="Close"
-													data-bs-dismiss="modal"
-												></button>
-											</div>
-											<div
-												class="modal-body bg2 overflow-hidden"
-											>
-												<iframe
-													width="100%"
-													height="100%"
-													allow="autoplay"
-													src="https://drive.google.com/file/d/1KC1H2Lz0LwND8n6KBD2v40dTbw5m44Ol/preview"
-												></iframe>
-											</div>
-										</div>
-									</div>
-								</div>
 							</div>
 						</div>
 					</div>
@@ -878,13 +841,14 @@
 								</li>
 								<li>
 									<a
-                                        class="lang"
+										class="lang"
 										target="_blank"
-                                        key="nure-course"
-                                        href="https://drive.google.com/file/d/13JsyvhnhhnVqo27h2E08lzbQ1MfPA67d/view?usp=share_link"
+										key="nure-course"
+										href="https://drive.google.com/file/d/13JsyvhnhhnVqo27h2E08lzbQ1MfPA67d/view?usp=share_link"
 									>
-                                        Optional course NURE (Nov. 2021 - May 2022)
-                                    </a>
+										Optional course NURE (Nov. 2021 - May
+										2022)
+									</a>
 								</li>
 							</ul>
 						</div>
@@ -1032,7 +996,7 @@
 		</section>
 
 		<!-- Go to top button -->
-		<button title="Go to top" id="go-to-top-btn">
+		<button id="go-to-top-btn">
 			<ion-icon name="arrow-up-outline"></ion-icon>
 		</button>
 
@@ -1087,6 +1051,44 @@
 			</div>
 		</footer>
 
+		<!-- fileModal -->
+		<div
+			tabindex="-1"
+			id="fileModal"
+			aria-hidden="true"
+			class="modal fade"
+			aria-labelledby="fileModalLabel"
+		>
+			<div class="modal-dialog modal-fullscreen">
+				<div class="modal-content">
+					<div class="modal-header bg2">
+						<h1
+							key="pdf-resume"
+							id="fileModalLabel"
+							class="modal-title text-color fs-3 lang"
+						>
+                            <!-- modal-title -->
+						</h1>
+						<button
+							type="button"
+							class="btn-close"
+							aria-label="Close"
+							data-bs-dismiss="modal"
+						></button>
+					</div>
+					<div class="modal-body bg2 overflow-hidden">
+						<iframe
+							width="100%"
+							height="100%"
+							allow="autoplay"
+							src="modal-link"
+                            id="fileModalIframe"
+						></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<!-- Bootstrap5 script -->
 		<script
 			crossorigin="anonymous"
@@ -1108,6 +1110,7 @@
 		<script src="./static/js/toggle_theme.js"></script>
 		<script src="./static/js/phone_number.js"></script>
 		<script src="./static/js/go_to_top_btn.js"></script>
+		<script src="./static/js/open_fileModal.js"></script>
 		<script type="module" src="./static/js/switch_language.js"></script>
 
 		<!-- Script to send email -->
