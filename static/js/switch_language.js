@@ -26,7 +26,7 @@ const switch_language_btn = document.querySelector(
 );
 switch_language_btn.addEventListener("click", function () {
 	if (localStorage.getItem("language") == "ua")
-		localStorage.removeItem("language");
+		localStorage.setItem("language", "en");
 	else localStorage.setItem("language", "ua");
 
 	location.reload();
