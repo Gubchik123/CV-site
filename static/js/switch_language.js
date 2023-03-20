@@ -11,7 +11,7 @@ function switch_language() {
 
 let switcher_class;
 
-if (sessionStorage.getItem("language") == "ua") {
+if (localStorage.getItem("language") == "ua") {
 	switch_language();
 	switcher_class = "en";
 } else {
@@ -25,9 +25,9 @@ const switch_language_btn = document.querySelector(
 	`.${switcher_class}_switcher`
 );
 switch_language_btn.addEventListener("click", function () {
-	if (sessionStorage.getItem("language") == "ua")
-		sessionStorage.removeItem("language");
-	else sessionStorage.setItem("language", "ua");
+	if (localStorage.getItem("language") == "ua")
+		localStorage.removeItem("language");
+	else localStorage.setItem("language", "ua");
 
 	location.reload();
 });
