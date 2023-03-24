@@ -1,4 +1,4 @@
-import { ua_lang_dict } from "./ua_lang.js";
+import { ua_lang_dict } from "./translation_into_ua.js";
 
 function switch_language() {
 	document.querySelector(".ua_switcher").classList.add("disabled");
