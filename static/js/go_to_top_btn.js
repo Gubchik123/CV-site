@@ -11,26 +11,34 @@ function check_on_scroll() {
 	if (
 		document.body.scrollTop > 550 ||
 		document.documentElement.scrollTop > 550
-	) {
+	)
+		slow_appearing();
+	else slow_hiding();
+}
+
+function slow_appearing() {
+	navbar_brand.style.animation = go_to_top_btn.style.animation =
+		"slowAppearing 0.3s normal";
+
+	setTimeout(() => {
+		// Timeout for animation
 		navbar_nav.classList.remove("me-auto");
 		navbar_brand.classList.remove("d-none");
+		go_to_top_btn.classList =
+			"rounded-circle d-flex justify-content-center align-items-center";
+	}, 300);
+}
 
-        // Slow "Go to top" button appearing
-        go_to_top_btn.style.animation = "slowAppearing 0.3s normal";
-        setTimeout(() => { // Timeout for animation
-            go_to_top_btn.classList =
-                "rounded-circle d-flex justify-content-center align-items-center";
-        }, 300);
-	} else {
-        // Slow "Go to top" button hiding
-        go_to_top_btn.style.animation = "slowHiding 0.3s normal";
-		setTimeout(() => { // Timeout for animation
-            go_to_top_btn.classList = "";
-		}, 300);
+function slow_hiding() {
+	navbar_brand.style.animation = go_to_top_btn.style.animation =
+		"slowHiding 0.3s normal";
 
+	setTimeout(() => {
+		// Timeout for animation
 		navbar_nav.classList.add("me-auto");
 		navbar_brand.classList.add("d-none");
-	}
+		go_to_top_btn.classList = "";
+	}, 300);
 }
 
 // When the user scrolls down 550px from the top of the document, show the button
