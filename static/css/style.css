@@ -137,7 +137,18 @@ a:hover,
 .ua_switcher { right: 60px; }
 
 .my_photo { width: 50%; }
+
 header h2 { font-size: 4em; }
+
+.my-position {
+    margin: 0 auto;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid rgba(255,255,255,.75);
+    animation: typewriter 4s steps(44) 1s 1 normal both, 
+               blinkTextCursor 700ms steps(44) infinite normal;
+}
+
 ion-icon[name="document-text"] { font-size: 1.5em; }
 ion-icon[name="calendar"] { font-size: 2em; }
 
@@ -273,7 +284,7 @@ footer {
     .social_networks a ion-icon { font-size: 1.3em; }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 576px) { /* Bootstrap5 .sm breakpoint */
     .modal-body div { width: 75%; }
     #about-me p { font-size: 1.1em; }
     #education ul { font-size: 1.1em; }
@@ -281,7 +292,17 @@ footer {
     footer { z-index: 90; }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 992px) { /* Bootstrap5 .lg breakpoint */
     #about-me p { font-size: 1.3em; }
     .project { width: 100%; }
+}
+
+/* Animations */
+@keyframes typewriter{
+    from { width: 0; }
+    to { width: 11em; }
+}
+@keyframes blinkTextCursor{
+    from { border-right-color: rgba(255,255,255,.75); }
+    to { border-right-color: transparent; }
 }
