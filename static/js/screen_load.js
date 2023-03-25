@@ -13,8 +13,7 @@ window.addEventListener("load", () => {
                 `;
 	setTimeout(() => {
 		screen_loader.style.animation = "slowHiding 1s normal";
-		// Timeout for animation
-		setTimeout(() => {
+		setTimeout(() => { // Timeout for animation
 			screen_loader.classList = "d-none";
 			screen_loader.style.display = "none";
 		}, 1000);
