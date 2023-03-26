@@ -1,62 +1,4 @@
-/* CSS variables */
-:root {
-    --text-color: var(--bs-dark);
-
-    --color1: #3499FF;
-    --color2: #3A3985;
-
-    --bg-color-1: white;
-    --bg-color-2: #eee;
-}
-:root[theme="dark"] {
-    --text-color: #fafafa;
-
-    --color1: #8278DA;
-    --color2: #121C84;
-
-    --bg-color-1: #343a40;
-    --bg-color-2: var(--bs-secondary);
-}
-
-.text-color { color: var(--text-color); }
-
-.color1 { color: var(--color1); }
-.color2 { color: var(--color2); }
-
-.bg1 { background-color: var(--bg-color-1); }
-.bg2 { background-color: var(--bg-color-2); }
-
-.bg1 h2 { color: var(--color1); }
-.bg2 h2 { color: var(--color2); }
-
-/* Custom scrollbar */
-::-webkit-scrollbar { 
-    width: 15px; 
-    background-color: var(--bs-dark);
-}
-::-webkit-scrollbar-track { 
-    border-radius: 7px;
-    background-color: var(--bs-dark); 
-}
-::-webkit-scrollbar-thumb {
-    opacity: 0.7;
-    border-radius: 7px;
-    background: darkgray; 
-}
-::-webkit-scrollbar-thumb:hover { opacity: 1; }
-
-/* Custom text selection */
-::-moz-selection {
-    color: white;
-    background: #2f3542;
-}
-
-::selection {
-    color: white;
-    background: #2f3542;
-}
-
-/* Theme toggler */
+/* Header styles */
 #theme_toggler, .language_switcher { top: 20px; }
 
 #theme_toggler { left: 20px; }
@@ -95,59 +37,12 @@ ion-icon[name="moon"] {
     color: yellow;
 }
 
-/* Global styles */
-body, .list-group-item { color: var(--text-color); }
-header, footer, .navbar {
-    background: var(--color1);
-    background: -moz-linear-gradient(left,  var(--color1) 0%, var(--color2) 100%);
-    background: -webkit-linear-gradient(left,  var(--color1) 0%,var(--color2) 100%);
-    background: linear-gradient(to right,  var(--color1) 0%,var(--color2) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=var(--color1), endColorstr=var(--color1),GradientType=1 );
-}
-section { 
-    padding: 80px 0; 
-    scroll-margin-top: 50px;
-}
-body, section { transition: background 0.2s linear; }
-
-
-.content-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.disabled { cursor: not-allowed; }
-
-.opacity-1, #go-to-top-btn:hover { opacity: 1; }
-
-a, #go-to-top-btn, #theme_toggler { 
-    opacity: 0.8; 
-    transition: 0.3s; 
-    color: var(--text-color);
-}
-a:hover,
-#theme_toggler:hover { 
-    opacity: 1; 
-    color: var(--text-color);
-}
-
-/* Header styles */
 .language_switcher { right: 20px; }
 .ua_switcher { right: 60px; }
 
 .my_photo { width: 50%; }
 
 header h2 { font-size: 4em; }
-
-.my-position {
-    margin: 0 auto;
-    overflow: hidden;
-    white-space: nowrap;
-    border-right: 2px solid rgba(255,255,255,.75);
-    animation: typewriter 4s steps(44) 2.5s 1 normal both, 
-               blinkTextCursor 700ms steps(44) infinite normal;
-}
 
 ion-icon[name="document-text"] { font-size: 1.5em; }
 ion-icon[name="calendar"] { font-size: 2em; }
@@ -296,22 +191,4 @@ footer {
 @media screen and (max-width: 992px) { /* Bootstrap5 .lg breakpoint */
     #about-me p { font-size: 1.3em; }
     .project { width: 100%; }
-}
-
-/* Animations */
-@keyframes typewriter{
-    from { width: 0; }
-    to { width: 11em; }
-}
-@keyframes blinkTextCursor{
-    from { border-right-color: rgba(255,255,255,.75); }
-    to { border-right-color: transparent; }
-}
-@keyframes slowHiding{
-    from { opacity: 1; }
-    to { opacity: 0; }
-}
-@keyframes slowAppearing{
-    from { opacity: 0; }
-    to { opacity: 1; }
 }
