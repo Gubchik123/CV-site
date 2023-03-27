@@ -113,6 +113,9 @@
 						<div class="d-flex justify-content-center">
 							<img
 								alt="My photo"
+								data-aos="zoom-in"
+								data-aos-delay="2000"
+								data-aos-duration="800"
 								class="my_photo img-fluid rounded-4"
 								onerror="this.onerror=null; this.src='./static/images/default-photo.webp';"
 								src="https://drive.google.com/uc?export=view&id=1YcYQuRfM1FgOCgHYsjGEZkcVuR5L_GmL"
@@ -124,7 +127,13 @@
 						<div class="d-flex flex-column justify-content-between">
 							<div>
 								<!-- My name and surname -->
-								<h2 class="lang" key="full-name">
+								<h2
+									class="lang"
+									key="full-name"
+									data-aos="fade-down"
+									data-aos-delay="2000"
+									data-aos-duration="800"
+								>
 									Nikita Hubariev
 								</h2>
 								<!-- My position -->
@@ -143,8 +152,12 @@
 								</h5>
 							</div>
 							<div class="mt-5 d-flex justify-content-center">
+                                <!-- Button to the embedded PDF resume -->
 								<a
 									href=""
+									data-aos="fade-right"
+									data-aos-delay="2000"
+									data-aos-duration="800"
 									data-bs-toggle="modal"
 									data-bs-target="#fileModal"
 									class="fileModal-link btn btn-lg btn-secondary me-3 opacity-1 text-white content-center"
@@ -154,9 +167,13 @@
 								>
 									<ion-icon name="document-text"></ion-icon>
 								</a>
+                                <!-- "Write Me" button -->
 								<a
 									key="write-me"
 									href="#write-me"
+									data-aos="fade-left"
+									data-aos-delay="2000"
+									data-aos-duration="800"
 									class="btn btn-lg btn-secondary opacity-1 text-white content-center lang"
 								>
 									Write Me
@@ -275,6 +292,7 @@
 					<div class="col-12">
 						<h2
 							key="contacts"
+							data-aos="fade-up"
 							class="text-center text-uppercase mb-5 lang"
 						>
 							Contacts
@@ -284,7 +302,10 @@
 				<!-- The content of the "Contacts" block -->
 				<div class="row">
 					<!-- My location -->
-					<div class="col-xl-4 col-md-6 col-sm-12 text-center">
+					<div
+						data-aos="fade-right"
+						class="col-xl-4 col-md-6 col-sm-12 text-center"
+					>
 						<div class="circle_icon content-center">
 							<ion-icon name="location-outline"></ion-icon>
 						</div>
@@ -292,7 +313,10 @@
 						<div class="line"></div>
 					</div>
 					<!-- My work email address -->
-					<div class="col-xl-4 col-md-6 col-sm-12 text-center">
+					<div
+						data-aos="zoom-in"
+						class="col-xl-4 col-md-6 col-sm-12 text-center"
+					>
 						<div class="circle_icon content-center">
 							<ion-icon name="mail-outline"></ion-icon>
 						</div>
@@ -303,8 +327,11 @@
 						</h5>
 						<div class="line"></div>
 					</div>
-					<!-- My phone number -->
-					<div class="col-xl-4 col-md-6 col-sm-12 text-center">
+					<!-- The button for phoneModal -->
+					<div
+						data-aos="fade-left"
+						class="col-xl-4 col-md-6 col-sm-12 text-center"
+					>
 						<div class="circle_icon content-center">
 							<ion-icon name="call-outline"></ion-icon>
 						</div>
@@ -407,7 +434,10 @@
 						</div>
 					</div>
 					<!-- The link to my profile on "LinkedIn" -->
-					<div class="col-xl-4 col-md-6 col-sm-12 text-center">
+					<div
+						data-aos="fade-right"
+						class="col-xl-4 col-md-6 col-sm-12 text-center"
+					>
 						<div class="circle_icon content-center">
 							<ion-icon name="logo-linkedin"></ion-icon>
 						</div>
@@ -417,7 +447,10 @@
 						<div class="line"></div>
 					</div>
 					<!-- The link to my profile on "GitHub" -->
-					<div class="col-xl-4 col-md-6 col-sm-12 text-center">
+					<div
+						data-aos="zoom-in"
+						class="col-xl-4 col-md-6 col-sm-12 text-center"
+					>
 						<div class="circle_icon content-center">
 							<ion-icon name="logo-github"></ion-icon>
 						</div>
@@ -432,7 +465,10 @@
 						<div class="line"></div>
 					</div>
 					<!-- The link to my profile on "Twitter" -->
-					<div class="col-xl-4 col-md-6 col-sm-12 text-center">
+					<div
+						data-aos="fade-left"
+						class="col-xl-4 col-md-6 col-sm-12 text-center"
+					>
 						<div class="circle_icon content-center">
 							<ion-icon name="logo-twitter"></ion-icon>
 						</div>
@@ -447,11 +483,12 @@
 						<div class="line"></div>
 					</div>
 				</div>
+				<!-- The title of the "Languages" block  -->
 				<div class="row">
-					<!-- The title of the "Languages" block  -->
 					<div class="col-12">
 						<h2
 							key="languages"
+							data-aos="fade-up"
 							class="text-center text-uppercase color2 my-5 lang"
 						>
 							Languages
@@ -461,7 +498,10 @@
 				<!-- The content of the "Contacts" block  -->
 				<div class="row align-items-center">
 					<!-- Ukrainian language -->
-					<div class="col-md-6 col-sm-12 text-center">
+					<div
+						data-aos="fade-right"
+						class="col-md-6 col-sm-12 text-center"
+					>
 						<div class="content-center">
 							<img
 								alt="Ukrainian circle flag"
@@ -475,7 +515,10 @@
 						<div class="line"></div>
 					</div>
 					<!-- English language -->
-					<div class="col-md-6 col-sm-12 text-center">
+					<div
+						data-aos="fade-left"
+						class="col-md-6 col-sm-12 text-center"
+					>
 						<div class="content-center">
 							<img
 								alt="UK circle flag"
@@ -500,6 +543,7 @@
 					<div class="col-12">
 						<h2
 							key="about-me"
+							data-aos="fade-up"
 							class="text-center text-uppercase mb-5 lang"
 						>
 							About me
@@ -509,7 +553,7 @@
 				<!-- The content of the "About me" block -->
 				<div class="row">
 					<!-- About me as a programmer -->
-					<p class="lang" key="about-me-p-1">
+					<p class="lang" key="about-me-p-1" data-aos="fade-right">
 						Hey, I am Nikita. A Python Web Developer from Kharkiv,
 						Ukraine. I am a self-taught programmer. 2+ years in
 						programming. 1+ year of Python experience. I like to
@@ -517,22 +561,24 @@
 						like to research someone's code and make refactoring.
 					</p>
 					<!-- About me as a person -->
-					<p class="lang" key="about-me-p-2">
+					<p class="lang" key="about-me-p-2" data-aos="fade-left">
 						I think that I am a social person who can find common
 						ground with a lot of people who aren't selfish and shy.
 						Unfortunately, I have no prior experience working in a
 						team, but I will give it my best shot.
 					</p>
 					<!-- About my interests -->
-					<p class="lang" key="about-me-p-3">
+					<p class="lang" key="about-me-p-3" data-aos="fade-right">
 						I am interested in sports and like weightlifting and
 						biking. I used to play football, and now I am a football
 						fan who enjoys watching matches.
 					</p>
+                    <!-- "Write Me" button -->
 					<div class="mt-5 text-center">
 						<a
 							key="write-me"
 							href="#write-me"
+							data-aos="zoom-in-up"
 							class="btn btn-lg btn-secondary opacity-1 text-white lang"
 						>
 							Write Me
@@ -550,6 +596,7 @@
 					<div class="col-12">
 						<h2
 							key="skills"
+							data-aos="fade-up"
 							class="text-center text-uppercase mb-5 lang"
 						>
 							Skills
@@ -560,8 +607,13 @@
 				<div class="row">
 					<!-- My backend skills -->
 					<div class="col-md-6 col-sm-12 mb-4">
-						<h3 class="text-center">Backend</h3>
-						<ul class="list-group list-group-flush w-75">
+						<h3 class="text-center" data-aos="flip-right">
+							Backend
+						</h3>
+						<ul
+							data-aos="fade-right"
+							class="list-group list-group-flush w-75"
+						>
 							<li class="list-group-item">
 								<ion-icon name="checkmark-circle"></ion-icon>
 								&nbsp; Python
@@ -578,8 +630,17 @@
 					</div>
 					<!-- My testing skills -->
 					<div class="col-md-6 col-sm-12 mb-4">
-						<h3 key="testing" class="text-center lang">Testing</h3>
-						<ul class="list-group list-group-flush w-75">
+						<h3
+							key="testing"
+							data-aos="flip-left"
+							class="text-center lang"
+						>
+							Testing
+						</h3>
+						<ul
+							data-aos="fade-left"
+							class="list-group list-group-flush w-75"
+						>
 							<li class="list-group-item">
 								<ion-icon name="checkmark-circle"></ion-icon>
 								&nbsp; PyTest
@@ -596,8 +657,17 @@
 					</div>
 					<!-- My databases skills -->
 					<div class="col-md-6 col-sm-12 mb-4">
-						<h3 key="db" class="text-center lang">Databases</h3>
-						<ul class="list-group list-group-flush w-75">
+						<h3
+							key="db"
+							data-aos="flip-right"
+							class="text-center lang"
+						>
+							Databases
+						</h3>
+						<ul
+							data-aos="fade-right"
+							class="list-group list-group-flush w-75"
+						>
 							<li class="list-group-item">
 								<ion-icon name="checkmark-circle"></ion-icon>
 								&nbsp; SQL
@@ -618,8 +688,13 @@
 					</div>
 					<!-- My frontend skills -->
 					<div class="col-md-6 col-sm-12 mb-4">
-						<h3 class="text-center">Frontend</h3>
-						<ul class="list-group list-group-flush w-75">
+						<h3 class="text-center" data-aos="flip-left">
+							Frontend
+						</h3>
+						<ul
+							data-aos="fade-left"
+							class="list-group list-group-flush w-75"
+						>
 							<li class="list-group-item">
 								<ion-icon name="checkmark-circle"></ion-icon>
 								&nbsp; HTML5
@@ -640,11 +715,18 @@
 					</div>
 					<!-- My other skills -->
 					<div class="col-12 mt-3">
-						<h3 key="other" class="text-center lang">Other</h3>
+						<h3
+							key="other"
+							data-aos="flip-up"
+							class="text-center lang"
+						>
+							Other
+						</h3>
 						<div
 							class="d-flex flex-column align-items-md-center align-items-sm-start"
 						>
 							<ul
+								data-aos="fade-up"
 								class="list-group list-group-flush w-75 mx-md-5 mx-sm-0"
 							>
 								<li class="list-group-item">
@@ -701,6 +783,7 @@
 					<div class="col-12">
 						<h2
 							key="phrase-title"
+							data-aos="fade-up"
 							class="text-center text-uppercase mb-5 lang"
 						>
 							The phrase I follow
@@ -711,11 +794,19 @@
 				<div class="row">
 					<div class="col-12 d-flex content-center">
 						<blockquote class="text-center">
-							<p class="fs-4 lang" key="phrase">
+							<p
+								key="phrase"
+								class="fs-4 lang"
+								data-aos="zoom-in-up"
+							>
 								"The best job is a well-paid hobby."
 							</p>
 							-
-							<cite class="fs-5 lang" key="phrase-author">
+							<cite
+								class="fs-5 lang"
+								key="phrase-author"
+								data-aos="zoom-in-down"
+							>
 								Henry Ford
 							</cite>
 						</blockquote>
@@ -732,6 +823,7 @@
 					<div class="col-12">
 						<h2
 							key="projects"
+							data-aos="fade-up"
 							class="text-center text-uppercase mb-5 lang"
 						>
 							Projects
@@ -741,7 +833,10 @@
 				<!-- The content of the "Projects" block -->
 				<div class="row justify-content-between">
 					<!-- Project #1: the site on Django -->
-					<div class="col-lg-4 col-md-12 project rounded-3 my-3 p-0">
+					<div
+						data-aos="fade-down-lg_fade-right-md"
+						class="col-lg-4 col-md-12 project rounded-3 my-3 p-0"
+					>
 						<div class="mb-3">
 							<!-- The project image and link to the deployed site -->
 							<a target="_blank" href="#">
@@ -769,7 +864,10 @@
 						</h4>
 					</div>
 					<!-- Project #2: the site on Flask -->
-					<div class="col-lg-4 col-md-12 project rounded-3 my-3 p-0">
+					<div
+						data-aos="fade-up-lg_fade-left-md"
+						class="col-lg-4 col-md-12 project rounded-3 my-3 p-0"
+					>
 						<div class="mb-3">
 							<!-- The project image and link to the deployed site -->
 							<a
@@ -807,7 +905,10 @@
 						</h4>
 					</div>
 					<!-- Project #3: the telegram bot -->
-					<div class="col-lg-4 col-md-12 project rounded-3 my-3 p-0">
+					<div
+						data-aos="fade-down-lg_fade-right-md"
+						class="col-lg-4 col-md-12 project rounded-3 my-3 p-0"
+					>
 						<div class="mb-3">
 							<!-- The project image and link to the deployed site -->
 							<a
@@ -845,9 +946,11 @@
 							mailing).
 						</h4>
 					</div>
+                    <!-- "My project board" button -->
 					<div class="mt-5 text-center">
 						<a
 							target="_blank"
+							data-aos="zoom-in-up"
 							key="my-project-board"
 							href="https://gubchik123-project-board.netlify.app"
 							class="btn btn-lg btn-secondary opacity-1 text-white lang"
@@ -867,6 +970,7 @@
 					<div class="col-12">
 						<h2
 							key="education"
+							data-aos="fade-up"
 							class="text-center text-uppercase mb-5 lang"
 						>
 							Education
@@ -876,7 +980,7 @@
 				<!-- The content of the "Education" block -->
 				<div class="row">
 					<!-- The courses that I have passed or watched -->
-					<div class="col-lg-6 col-md-12 mb-3">
+					<div class="col-lg-6 col-md-12 mb-3" data-aos="fade-right">
 						<h3>
 							<a
 								key="courses"
@@ -1092,7 +1196,7 @@
 						</div>
 					</div>
 					<!-- The books that I have read -->
-					<div class="col-lg-6 col-md-12">
+					<div class="col-lg-6 col-md-12" data-aos="fade-left">
 						<h3 key="books" class="lang">Books</h3>
 						<div>
 							<ul>
@@ -1169,6 +1273,7 @@
 					<div class="col-12">
 						<h2
 							key="write-me"
+							data-aos="fade-up"
 							class="text-center text-uppercase mb-5 lang"
 						>
 							Write Me
@@ -1182,6 +1287,7 @@
 					>
 						<!-- Form for sending email -->
 						<form
+							data-aos="zoom-in"
 							class="bg-secondary rounded-3 d-flex flex-column justify-content-center px-3 py-4"
 						>
 							<div class="form-floating mb-3">
@@ -1366,7 +1472,8 @@
 
 		<!-- Script to initialize AOS  -->
 		<script>
-			AOS.init();
+			let offset = window.innerWidth <= 768 ? 130 : 100;
+			AOS.init({ offset: offset, duration: 600, once: true });
 		</script>
 	</body>
 </html>
