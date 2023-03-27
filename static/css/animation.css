@@ -4,7 +4,7 @@
     overflow: hidden;
     white-space: nowrap;
     border-right: 2px solid rgba(255,255,255,.75);
-    animation: typewriter 4s steps(44) 2.5s 1 normal both, 
+    animation: typewriter 4s steps(44) var(--startup-delay) 1 normal both, 
                blinkTextCursor 700ms steps(44) infinite normal;
 }
 

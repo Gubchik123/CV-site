@@ -7,6 +7,8 @@
 
     --bg-color-1: white;
     --bg-color-2: #eee;
+
+    --startup-delay: 2.5s;
 }
 :root[theme="dark"] {
     --text-color: #fafafa;
