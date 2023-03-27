@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 		<meta name="author" content="Nikita Hubariev" />
-        <meta name="keywords" content="CV, resume, Nikita Hubariev">
+		<meta name="keywords" content="CV, resume, Nikita Hubariev" />
 		<meta
 			name="description"
 			content="Nikita Hubariev, Python Web Developer - CV"
@@ -14,11 +14,8 @@
 
 		<meta property="og:type" content="CV site" />
 		<meta property="og:title" content="Nikita Hubariev - CV" />
+		<meta property="og:image" content="./md_images/header.png" />
 		<meta property="og:site_name" content="Nikita Hubariev - CV" />
-		<meta
-			property="og:image"
-			content="./md_images/header.png"
-		/>
 		<meta
 			property="og:url"
 			content="https://nikita-hubariev-cv.netlify.app/"
@@ -36,17 +33,27 @@
 		<!-- Site icon -->
 		<link rel="icon" type="image/x-icon" href="./static/images/cv.ico" />
 
-		<!-- Bootstrap5 CSS -->
+		<!-- Bootstrap5 min CSS file -->
 		<link
 			rel="stylesheet"
 			crossorigin="anonymous"
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
 			integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
 		/>
+		<!-- AOS (Animate On Scroll Library) CSS file -->
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 		<!-- My CSS files with styles -->
-		<link rel="stylesheet" type="text/css" href="./static/css/global.css" />
-		<link rel="stylesheet" type="text/css" href="./static/css/general.css" />
-		<link rel="stylesheet" type="text/css" href="./static/css/animation.css" />
+		<link type="text/css" rel="stylesheet" href="./static/css/global.css" />
+		<link
+			type="text/css"
+			rel="stylesheet"
+			href="./static/css/general.css"
+		/>
+		<link
+			type="text/css"
+			rel="stylesheet"
+			href="./static/css/animation.css"
+		/>
 	</head>
 	<body>
 		<!-- Full screen loader -->
@@ -1320,14 +1327,14 @@
 			</div>
 		</div>
 
-		<!-- Bootstrap5 script -->
+		<!-- Bootstrap5 min script file -->
 		<script
 			crossorigin="anonymous"
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
 		></script>
 
-		<!-- Scripts for icons from "https://ionic.io/ionicons" -->
+		<!-- Script files for icons from "https://ionic.io/ionicons" -->
 		<script
 			type="module"
 			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -1337,7 +1344,10 @@
 			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
 		></script>
 
-		<!-- My scripts -->
+		<!-- AOS (Animate On Scroll Library) JS file -->
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+		<!-- My script files -->
 		<script src="./static/js/scrolling.js"></script>
 		<script src="./static/js/toggle_theme.js"></script>
 		<script src="./static/js/phone_number.js"></script>
@@ -1352,6 +1362,11 @@
 					`mailto:nikita.hubariev@gmail.com?subject=${form.subject.value}&body=${form.body.value}`
 				);
 			});
+		</script>
+
+		<!-- Script to initialize AOS  -->
+		<script>
+			AOS.init();
 		</script>
 	</body>
 </html>
