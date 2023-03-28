@@ -192,7 +192,14 @@
 		</header>
 
 		<!-- Sticky navigation menu -->
-		<div class="sticky-top">
+		<div
+			class="sticky-top"
+			style="
+				z-index: 90;
+				margin-top: -1px;
+				box-shadow: 0 10px 20px var(--bs-dark);
+			"
+		>
 			<nav class="navbar navbar-expand-lg navbar-dark">
 				<div class="container-fluid">
 					<!-- To move the burger button to the right -->
@@ -1463,6 +1470,9 @@
 
 		<!-- AOS (Animate On Scroll Library) JS file -->
 		<script src="./static/js/min/aos.min.js"></script>
+		<script>
+			AOS.init({ offset: 100, duration: 600, once: true });
+		</script>
 
 		<!-- My script files -->
 		<script defer src="./static/js/min/scrolling.min.js"></script>
@@ -1482,12 +1492,6 @@
 					`mailto:nikita.hubariev@gmail.com?subject=${form.subject.value}&body=${form.body.value}`
 				);
 			});
-		</script>
-
-		<!-- Script to initialize AOS  -->
-		<script>
-			let offset = window.innerWidth <= 768 ? 130 : 100;
-			AOS.init({ offset: offset, duration: 600, once: true });
 		</script>
 	</body>
 </html>
