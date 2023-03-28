@@ -74,7 +74,7 @@
 		</div>
 
 		<!-- Script to display "Welcome" and hide the screen loader -->
-		<script src="./static/js/screen_load.js"></script>
+		<script src="./static/js/min/screen_load.min.js"></script>
 
 		<!-- Theme toggler -->
 		<div id="theme_toggler" class="position-absolute">
@@ -844,7 +844,7 @@
 							<a target="_blank" href="#">
 								<img
 									alt="Django site header"
-									class="img-fluid rounded-3 mb-1"
+									class="img-fluid w-100 rounded-3 mb-1"
 									src="./static/images/headers/DjangoSite.webp"
 								/>
 							</a>
@@ -878,7 +878,7 @@
 							>
 								<img
 									alt="ITish header"
-									class="img-fluid rounded-3 mb-1"
+									class="img-fluid w-100 rounded-3 mb-1"
 									src="./static/images/headers/ITish.webp"
 								/>
 							</a>
@@ -919,7 +919,7 @@
 							>
 								<img
 									alt="ITish header"
-									class="img-fluid rounded-3 mb-1"
+									class="img-fluid w-100 rounded-3 mb-1"
 									src="./static/images/headers/WeatherBot.webp"
 								/>
 							</a>
@@ -1461,14 +1461,17 @@
 		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
 		<!-- My script files -->
-		<script src="./static/js/scrolling.js"></script>
-		<script src="./static/js/toggle_theme.js"></script>
-		<script src="./static/js/phone_number.js"></script>
-		<script src="./static/js/open_fileModal.js"></script>
-		<script type="module" src="./static/js/switch_language.js"></script>
+		<script defer src="./static/js/min/scrolling.min.js"></script>
+		<script defer src="./static/js/min/toggle_theme.min.js"></script>
+		<script defer src="./static/js/min/phone_number.min.js"></script>
+		<script defer src="./static/js/min/open_fileModal.min.js"></script>
+		<script
+			type="module"
+			src="./static/js/min/switch_language.min.js"
+		></script>
 
 		<!-- Script to send email -->
-		<script>
+		<script defer>
 			const form = document.forms[0];
 			form.send.addEventListener("click", function () {
 				window.open(
