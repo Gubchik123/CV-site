@@ -40,8 +40,6 @@ ion-icon[name="moon"] {
 .language_switcher { right: 20px; }
 .ua_switcher { right: 60px; }
 
-.my_photo { width: 50%; }
-
 header h2 { font-size: 4em; }
 
 ion-icon[name="document-text"] { font-size: 1.5em; }
@@ -176,11 +174,11 @@ footer {
 
 /* Media queries */
 @media screen and (max-width: 425px) {
-    .my_photo { width: 75%; }
     .social_networks a ion-icon { font-size: 1.3em; }
 }
 
 @media screen and (max-width: 576px) { /* Bootstrap5 .sm breakpoint */
+    header h2 { font-size: 2.5em; }
     .modal-body div { width: 75%; }
     #about-me p { font-size: 1.1em; }
     #education ul { font-size: 1.1em; }
