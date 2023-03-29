@@ -193,7 +193,8 @@
 
 		<!-- Sticky navigation menu -->
 		<div
-			class="sticky-top"
+			id="navigation-menu"
+			class="position-relative"
 			style="
 				z-index: 90;
 				margin-top: -1px;
@@ -208,11 +209,10 @@
 					<!-- My name (navbar brand) is hidden at the start -->
 					<a
 						href="#"
-						key="full-name"
 						id="navbar-brand"
-						class="navbar-brand text-white d-none lang"
+						class="navbar-brand text-white d-none"
 					>
-						<b>Nikita Hubariev</b>
+						<b class="lang" key="full-name"> Nikita Hubariev </b>
 					</a>
 
 					<!-- Burger button -->
