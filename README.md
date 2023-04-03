@@ -3,6 +3,8 @@ _My CV site_
 
 ## Demo
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/adac3b81-daa3-4776-b5f7-96423b05c98b/deploy-status)](https://app.netlify.com/sites/nikita-hubariev-cv/deploys)
+
 Click **<a href="https://nikita-hubariev-cv.netlify.app/" target="_blank">here</a>** to open my CV site
 
 <a href="https://nikita-hubariev-cv.netlify.app/" target="_blank"><img title="Demo" alt="Demo image" src="./md_images/light-demo-en.jpg"></a>
