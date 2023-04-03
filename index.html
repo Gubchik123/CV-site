@@ -1291,14 +1291,51 @@
 					<div
 						class="col-12 d-flex justify-content-center align-items-center"
 					>
-						<!-- Form for sending email -->
+						<!-- "Write me" form -->
 						<form
+							netlify
+							method="POST"
+							name="write-me"
 							data-aos="zoom-in"
 							class="bg-secondary rounded-3 d-flex flex-column justify-content-center px-3 py-4"
 						>
+                            <!-- "Name" field -->
 							<div class="form-floating mb-3">
 								<input
 									required
+									type="text"
+									name="name"
+									placeholder="Name"
+									class="form-control"
+								/>
+								<label
+									class="lang"
+									key="name-field"
+									for="floatingInput"
+								>
+									Name
+								</label>
+							</div>
+                            <!-- "Email" field -->
+							<div class="form-floating mb-3">
+								<input
+									required
+									type="email"
+									name="email"
+									placeholder="Email"
+									class="form-control"
+								/>
+								<label
+									class="lang"
+									key="email-field"
+									for="floatingInput"
+								>
+									Email
+								</label>
+							</div>
+                            <!-- "Subject" (optional) field -->
+							<div class="form-floating mb-3">
+								<input
 									type="text"
 									name="subject"
 									placeholder="Subject"
@@ -1309,9 +1346,10 @@
 									key="subject-field"
 									for="floatingInput"
 								>
-									Subject
+									Subject (optional)
 								</label>
 							</div>
+                            <!-- "Body" textarea -->
 							<div class="form-floating mb-4">
 								<textarea
 									required
@@ -1328,6 +1366,7 @@
 									Body
 								</label>
 							</div>
+                            <!-- "Send" submit button -->
 							<div class="text-center">
 								<button
 									name="send"
@@ -1473,15 +1512,5 @@
 			src="./static/js/switch_language.min.js"
 			defer
 		></script>
-
-		<!-- Script to send email -->
-		<script defer>
-			const form = document.forms[0];
-			form.send.addEventListener("click", function () {
-				window.open(
-					`mailto:nikita.hubariev@gmail.com?subject=${form.subject.value}&body=${form.body.value}`
-				);
-			});
-		</script>
 	</body>
 </html>
