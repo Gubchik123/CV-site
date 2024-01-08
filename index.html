@@ -2,11 +2,11 @@
 <html lang="en">
 	<head>
 		<!-- Script to check and redirect to the "nikita-hubariev.me" -->
-		<script>
+		<!-- <script>
 			if (window.location.hostname != "nikita-hubariev.me") {
 				window.open("https://nikita-hubariev.me", "_self");
 			}
-		</script>
+		</script> -->
 
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -488,23 +488,99 @@
 								</h5>
 								<div class="line"></div>
 							</div>
-							<!-- The link to my profile on "GitHub" -->
+							<!-- The button for codeHostsModal -->
 							<div
-								data-aos="zoom-in"
 								class="col-xl-4 col-md-6 col-sm-12 text-center"
 							>
-								<div class="circle_icon content-center">
-									<ion-icon name="logo-github"></ion-icon>
+								<div data-aos="zoom-in">
+									<div class="circle_icon content-center">
+										<ion-icon
+											name="git-branch-outline"
+										></ion-icon>
+									</div>
+									<h5>
+										<a
+											href=""
+											class="lang"
+											key="version-control-systems"
+											data-bs-toggle="modal"
+											data-bs-target="#codeHostsModal"
+										>
+											Version control systems
+										</a>
+									</h5>
+									<div class="line"></div>
 								</div>
-								<h5>
-									<a
-										target="_blank"
-										href="https://github.com/Gubchik123"
+								<!-- codeHostsModal -->
+								<div
+									tabindex="-1"
+									id="codeHostsModal"
+									aria-hidden="true"
+									class="modal fade"
+									aria-labelledby="codeHostsModalLabel"
+								>
+									<div
+										class="modal-dialog modal-dialog-centered"
 									>
-										GitHub
-									</a>
-								</h5>
-								<div class="line"></div>
+										<div class="modal-content">
+											<div class="modal-header bg2">
+												<h1
+													key="your-choice"
+													id="codeHostsModalLabel"
+													class="modal-title fs-3 lang"
+												>
+													Your choice
+												</h1>
+												<button
+													type="button"
+													class="btn-close"
+													aria-label="Close"
+													data-bs-dismiss="modal"
+												></button>
+											</div>
+											<div
+												class="modal-body bg2 d-flex flex-column align-items-center"
+											>
+												<div
+													class="mb-3 fs-4 content-center justify-content-between"
+												>
+													<ion-icon
+														name="logo-github"
+													></ion-icon>
+													<a
+														target="_blank"
+														href="https://github.com/Gubchik123"
+													>
+														GitHub
+													</a>
+												</div>
+												<div
+													class="mb-3 fs-4 content-center justify-content-between"
+												>
+													<ion-icon
+														name="logo-gitlab"
+													></ion-icon>
+													<a
+														target="_blank"
+														href="https://gitlab.com/Gubchik123"
+													>
+														GitLab
+													</a>
+												</div>
+											</div>
+											<div class="modal-footer bg2">
+												<button
+													key="close"
+													type="button"
+													data-bs-dismiss="modal"
+													class="btn btn-danger btn-lg lang"
+												>
+													Close
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
 							<!-- The link to my profile on "Twitter" -->
 							<div
