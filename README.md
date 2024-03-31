@@ -29,3 +29,8 @@ There is a theme toggler between light and dark themes.
 
 There is the ability to switch the site into Ukrainian.
 <a href="https://hubariev.com" target="_blank"><img title="Demo" alt="Demo image" src="./md_images/dark-demo-ua.jpg"></a>
+
+            
+### License
+
+[CV-site](https://github.com/Gubchik123/CV-site) is licensed under the [MIT License](https://github.com/Gubchik123/CV-site/blob/master/LICENSE.md).
