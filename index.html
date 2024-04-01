@@ -2108,6 +2108,9 @@
 		<script src="./static/js/aos.min.js"></script>
 		<script>
 			AOS.init({ offset: 100, duration: 600, once: true });
+            // Global variables
+            const url = new URL(window.location.href);
+            const search_params = new URLSearchParams(url.search);
 		</script>
 
 		<!-- My script files -->
