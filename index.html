@@ -2,11 +2,11 @@
 <html lang="en">
 	<head>
 		<!-- Script to check and redirect to the "hubariev.com" -->
-		<script>
+		<!-- <script>
 			if (window.location.hostname != "hubariev.com") {
 				window.open("https://hubariev.com", "_self");
 			}
-		</script>
+		</script> -->
 
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -176,6 +176,7 @@
 									<!-- Button to the embedded PDF resume -->
 									<a
 										href=""
+                                        title="PDF"
 										data-aos="fade-right"
 										data-aos-delay="2000"
 										data-aos-duration="800"
@@ -190,16 +191,32 @@
 											name="document-text"
 										></ion-icon>
 									</a>
-									<!-- "Write Me" button -->
-									<a
-										key="sections.write_me"
-										href="#write-me"
-										data-aos="fade-left"
+									<!-- Button to print PDF resume -->
+									<button
+                                        title="Print"
+										data-aos="fade-up"
 										data-aos-delay="2000"
 										data-aos-duration="800"
-										class="btn btn-lg btn-secondary opacity-1 text-white content-center lang"
+                                        onClick="window.print()"
+										class="fileModal-link btn btn-lg btn-secondary me-3 opacity-1 text-white content-center"
 									>
-										Write Me
+										<ion-icon
+											name="print-outline"
+										></ion-icon>
+									</button>
+									<!-- Button to download PDF resume -->
+									<a
+                                        title="Download"
+                                        data-aos="fade-left"
+                                        data-aos-delay="2000"
+                                        data-aos-duration="800"
+                                        href="./static/resume.pdf"
+                                        download="Nikita Hubariev - Python Web Developer (resume).pdf"
+										class="fileModal-link btn btn-lg btn-secondary me-3 opacity-1 text-white content-center"
+									>
+										<ion-icon
+											name="download-outline"
+										></ion-icon>
 									</a>
 								</div>
 							</div>
