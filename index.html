@@ -2,11 +2,11 @@
 <html lang="en">
 	<head>
 		<!-- Script to check and redirect to the "hubariev.com" -->
-		<!-- <script>
+		<script>
 			if (window.location.hostname != "hubariev.com") {
 				window.open("https://hubariev.com", "_self");
 			}
-		</script> -->
+		</script>
 
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -35,7 +35,7 @@
 		<meta name="twitter:card" content="summary_large_image" />
 		<meta name="twitter:image:alt" content="CV site header image" />
 
-		<title>Nikita Hubariev - CV</title>
+		<title key="title" class="lang">Nikita Hubariev - CV site</title>
 
 		<!-- Site icon -->
 		<link rel="icon" type="image/x-icon" href="./static/images/cv.ico" />
@@ -160,7 +160,7 @@
 									<!-- My name and surname -->
 									<h2
 										class="lang"
-										key="full-name"
+										key="full_name"
 										data-aos="fade-down"
 										data-aos-delay="2000"
 										data-aos-duration="800"
@@ -176,6 +176,7 @@
 									<!-- Button to the embedded PDF resume -->
 									<a
 										href=""
+                                        title="PDF"
 										data-aos="fade-right"
 										data-aos-delay="2000"
 										data-aos-duration="800"
@@ -190,16 +191,32 @@
 											name="document-text"
 										></ion-icon>
 									</a>
-									<!-- "Write Me" button -->
-									<a
-										key="write-me"
-										href="#write-me"
-										data-aos="fade-left"
+									<!-- Button to print PDF resume -->
+									<button
+                                        title="Print"
+										data-aos="fade-up"
 										data-aos-delay="2000"
 										data-aos-duration="800"
-										class="btn btn-lg btn-secondary opacity-1 text-white content-center lang"
+                                        onClick="window.print()"
+										class="fileModal-link btn btn-lg btn-secondary me-3 opacity-1 text-white content-center"
 									>
-										Write Me
+										<ion-icon
+											name="print-outline"
+										></ion-icon>
+									</button>
+									<!-- Button to download PDF resume -->
+									<a
+                                        title="Download"
+                                        data-aos="fade-left"
+                                        data-aos-delay="2000"
+                                        data-aos-duration="800"
+                                        href="./static/resume.pdf"
+                                        download="Nikita Hubariev - Python Web Developer (resume).pdf"
+										class="fileModal-link btn btn-lg btn-secondary me-3 opacity-1 text-white content-center"
+									>
+										<ion-icon
+											name="download-outline"
+										></ion-icon>
 									</a>
 								</div>
 							</div>
@@ -227,7 +244,7 @@
 							id="navbar-brand"
 							class="navbar-brand text-white d-none"
 						>
-							<b class="lang" key="full-name">
+							<b class="lang" key="full_name">
 								Nikita Hubariev
 							</b>
 						</a>
@@ -254,7 +271,7 @@
 							>
 								<li class="nav-item me-lg-2 me-sm-4">
 									<a
-										key="contacts"
+										key="sections.contacts"
 										class="nav-link lang"
 										href="#contacts"
 									>
@@ -263,7 +280,7 @@
 								</li>
 								<li class="nav-item me-lg-2 me-sm-4">
 									<a
-										key="about-me"
+										key="sections.about_me"
 										href="#about-me"
 										class="nav-link lang"
 									>
@@ -272,7 +289,7 @@
 								</li>
 								<li class="nav-item me-lg-2 me-sm-4">
 									<a
-										key="skills"
+										key="sections.skills"
 										href="#skills"
 										class="nav-link lang"
 									>
@@ -281,7 +298,7 @@
 								</li>
 								<li class="nav-item me-lg-2 me-sm-4">
 									<a
-										key="experience"
+										key="sections.experience"
 										href="#experience"
 										class="nav-link lang"
 									>
@@ -290,7 +307,7 @@
 								</li>
 								<li class="nav-item me-lg-2 me-sm-4">
 									<a
-										key="projects"
+										key="sections.projects"
 										href="#projects"
 										class="nav-link lang"
 									>
@@ -299,7 +316,7 @@
 								</li>
 								<li class="nav-item me-lg-2 me-sm-4">
 									<a
-										key="education"
+										key="sections.education"
 										href="#education"
 										class="nav-link lang"
 									>
@@ -308,7 +325,7 @@
 								</li>
 								<li class="nav-item me-lg-2 me-sm-4">
 									<a
-										key="write-me"
+										key="sections.write_me"
 										href="#write-me"
 										class="nav-link lang"
 									>
@@ -329,7 +346,7 @@
 						<div class="row">
 							<div class="col-12">
 								<h2
-									key="contacts"
+									key="sections.contacts"
 									data-aos="fade-up"
 									class="text-center text-uppercase mb-5 lang"
 								>
@@ -349,7 +366,7 @@
 										name="location-outline"
 									></ion-icon>
 								</div>
-								<h5 key="city" class="lang">
+								<h5 key="contacts.city" class="lang">
 									Kharkiv, Ukraine
 								</h5>
 								<div class="line"></div>
@@ -383,7 +400,7 @@
 										<a
 											href=""
 											class="lang"
-											key="phone-number"
+											key="contacts.phone_number"
 											data-bs-toggle="modal"
 											data-bs-target="#phoneModal"
 										>
@@ -406,7 +423,7 @@
 										<div class="modal-content">
 											<div class="modal-header bg2">
 												<h1
-													key="your-choice"
+													key="contacts.your_choice"
 													id="phoneModalLabel"
 													class="modal-title fs-3 lang"
 												>
@@ -429,7 +446,7 @@
 														name="phone-portrait-outline"
 													></ion-icon>
 													<a
-														key="phone"
+														key="contacts.phone"
 														href="tel:+380"
 														target="_blank"
 														class="phone-link lang"
@@ -467,7 +484,7 @@
 											</div>
 											<div class="modal-footer bg2">
 												<button
-													key="close"
+													key="contacts.close"
 													type="button"
 													data-bs-dismiss="modal"
 													class="btn btn-danger btn-lg lang"
@@ -511,7 +528,7 @@
 										<a
 											href=""
 											class="lang"
-											key="version-control-systems"
+											key="skills.version_control_systems"
 											data-bs-toggle="modal"
 											data-bs-target="#codeHostsModal"
 										>
@@ -534,7 +551,7 @@
 										<div class="modal-content">
 											<div class="modal-header bg2">
 												<h1
-													key="your-choice"
+													key="contacts.your_choice"
 													id="codeHostsModalLabel"
 													class="modal-title fs-3 lang"
 												>
@@ -579,7 +596,7 @@
 											</div>
 											<div class="modal-footer bg2">
 												<button
-													key="close"
+													key="contacts.close"
 													type="button"
 													data-bs-dismiss="modal"
 													class="btn btn-danger btn-lg lang"
@@ -614,7 +631,7 @@
 						<div class="row">
 							<div class="col-12">
 								<h2
-									key="languages"
+									key="contacts.languages.__title__"
 									data-aos="fade-up"
 									class="text-center text-uppercase color2 my-5 lang"
 								>
@@ -636,7 +653,7 @@
 										src="./static/images/languages/ukrainian.webp"
 									/>
 								</div>
-								<h5 key="ua-language" class="mt-3 lang">
+								<h5 key="contacts.languages.ua" class="mt-3 lang">
 									Ukrainian - native
 								</h5>
 								<div class="line"></div>
@@ -653,7 +670,7 @@
 										src="./static/images/languages/english.webp"
 									/>
 								</div>
-								<h5 class="mt-3 lang" key="en-language">
+								<h5 class="mt-3 lang" key="contacts.languages.en">
 									English - intermediate (B1)
 								</h5>
 								<div class="line"></div>
@@ -668,7 +685,7 @@
 						<div class="row">
 							<div class="col-12">
 								<h2
-									key="about-me"
+									key="sections.about_me"
 									data-aos="fade-up"
 									class="text-center text-uppercase mb-5 lang"
 								>
@@ -681,7 +698,7 @@
 							<!-- About me as a programmer -->
 							<p
 								class="lang"
-								key="about-me-p-1"
+								key="about_me.p_1"
 								data-aos="fade-right"
 							>
 								Hey, I am Nikita. I'm a Python Web Developer
@@ -693,7 +710,7 @@
 							<!-- About my experience -->
 							<p
 								class="lang"
-								key="about-me-p-2"
+								key="about_me.p_2"
 								data-aos="fade-left"
 							>
 								I have been self-taught in programming,
@@ -705,7 +722,7 @@
 							<!-- About my interests -->
 							<p
 								class="lang"
-								key="about-me-p-3"
+								key="about_me.p_3"
 								data-aos="fade-right"
 							>
 								Outside of programming, I have a variety of
@@ -718,7 +735,7 @@
 							<!-- Call to action -->
 							<!-- <p
 								class="lang"
-								key="about-me-p-4"
+								key="about_me.p_4"
 								data-aos="fade-left"
 							>
 								I'm open to new opportunities and
@@ -728,7 +745,7 @@
 							<!-- "Write Me" button -->
 							<div class="mt-5 text-center">
 								<a
-									key="write-me"
+									key="sections.write_me"
 									href="#write-me"
 									data-aos="zoom-in-up"
 									class="btn btn-lg btn-secondary opacity-1 text-white lang"
@@ -746,7 +763,7 @@
 						<div class="row">
 							<div class="col-12">
 								<h2
-									key="skills"
+									key="sections.skills"
 									data-aos="fade-up"
 									class="text-center text-uppercase mb-5 lang"
 								>
@@ -757,7 +774,7 @@
 						<!-- The content of the "Skills" block -->
 						<div class="row">
 							<!-- My backend skills -->
-							<div class="col-md-6 col-sm-12 mb-4">
+							<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
 								<h3 class="text-center" data-aos="flip-right">
 									Backend
 								</h3>
@@ -843,12 +860,12 @@
 								</ul>
 							</div>
 							<!-- My frontend skills -->
-							<div class="col-md-6 col-sm-12 mb-4">
-								<h3 class="text-center" data-aos="flip-left">
+							<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+								<h3 class="text-center" data-aos="flip-up">
 									Frontend
 								</h3>
 								<ul
-									data-aos="fade-left"
+									data-aos="fade-up"
 									class="list-group list-group-flush w-75"
 								>
 									<li class="list-group-item border-dark">
@@ -929,16 +946,16 @@
 								</ul>
 							</div>
 							<!-- My databases skills -->
-							<div class="col-md-6 col-sm-12 mb-4">
+							<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
 								<h3
-									key="db"
-									data-aos="flip-right"
+									key="skills.db"
+									data-aos="flip-left"
 									class="text-center lang"
 								>
 									Databases
 								</h3>
 								<ul
-									data-aos="fade-right"
+									data-aos="fade-left"
 									class="list-group list-group-flush w-75"
 								>
 									<li class="list-group-item border-dark">
@@ -980,16 +997,16 @@
 								</ul>
 							</div>
 							<!-- My testing skills -->
-							<div class="col-md-6 col-sm-12 mb-4">
+							<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
 								<h3
-									key="testing"
-									data-aos="flip-left"
+									key="skills.testing"
+									data-aos="flip-right"
 									class="text-center lang"
 								>
 									Testing
 								</h3>
 								<ul
-									data-aos="fade-left"
+									data-aos="fade-right"
 									class="list-group list-group-flush w-75"
 								>
 									<li class="list-group-item">
@@ -1040,16 +1057,16 @@
 								</ul>
 							</div>
 							<!-- My version control systems skills -->
-							<div class="col-md-6 col-sm-12 mb-4">
+							<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
 								<h3
-									data-aos="flip-right"
+									data-aos="flip-up"
 									class="text-center lang"
-									key="version-control-systems"
+									key="skills.version_control_systems"
 								>
 									Version control systems
 								</h3>
 								<ul
-									data-aos="fade-right"
+									data-aos="fade-up"
 									class="list-group list-group-flush w-75"
 								>
 									<li class="list-group-item border-dark">
@@ -1115,7 +1132,7 @@
 								</ul>
 							</div>
 							<!-- My DevOps skills -->
-							<div class="col-md-6 col-sm-12 mb-4">
+							<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
 								<h3 class="text-center" data-aos="flip-left">
 									DevOps
 								</h3>
@@ -1188,7 +1205,7 @@
 							<!-- My tools -->
 							<div class="col-12 mt-3">
 								<h3
-									key="tools"
+									key="skills.tools"
 									data-aos="flip-up"
 									class="text-center lang"
 								>
@@ -1342,7 +1359,7 @@
 						<div class="row">
 							<div class="col-12">
 								<h2
-									key="phrase-title"
+									key="phrase.__title__"
 									data-aos="fade-up"
 									class="text-center text-uppercase mb-5 lang"
 								>
@@ -1355,7 +1372,7 @@
 							<div class="col-12 d-flex content-center">
 								<blockquote class="text-center">
 									<p
-										key="phrase"
+										key="phrase.phrase"
 										class="fs-4 lang"
 										data-aos="zoom-in-up"
 									>
@@ -1364,7 +1381,7 @@
 									-
 									<cite
 										class="fs-5 lang"
-										key="phrase-author"
+										key="phrase.author"
 										data-aos="zoom-in-down"
 									>
 										Henry Ford
@@ -1381,7 +1398,7 @@
 						<div class="row">
 							<div class="col-12">
 								<h2
-									key="projects"
+									key="sections.projects"
 									data-aos="fade-up"
 									class="text-center text-uppercase mb-5 lang"
 								>
@@ -1421,7 +1438,7 @@
 									</h5>
 									<!-- The project developing period -->
 									<h6
-										key="project-1-date"
+										key="projects.lapzone.date"
 										class="text-center mt-1 lang"
 									>
 										Mar 2023 - Jun 2023 (4 months)
@@ -1434,7 +1451,7 @@
 									HTML5, CSS3, JavaScript, Bootstrap5
 								</h6>
 								<!-- The project description -->
-								<h4 key="project-1" class="mt-3 px-2 lang">
+								<h4 key="projects.lapzone.description" class="mt-3 px-2 lang">
 									The Internet shop for selling laptops and
 									accessories for them.
 								</h4>
@@ -1469,7 +1486,7 @@
 									</h5>
 									<!-- The project developing period -->
 									<h6
-										key="project-2-date"
+										key="projects.itish.date"
 										class="text-center mt-1 lang"
 									>
 										Nov 2022 - Jan 2023 (3 months)
@@ -1482,7 +1499,7 @@
 									PyTest, HTML5, CSS3, JavaScript, Bootstrap5
 								</h6>
 								<!-- The project description -->
-								<h4 key="project-2" class="mt-3 px-2 lang">
+								<h4 key="projects.itish.description" class="mt-3 px-2 lang">
 									The blog site to publish posts on the IT
 									topic (with registration and user profile).
 								</h4>
@@ -1517,7 +1534,7 @@
 									</h5>
 									<!-- The project developing period -->
 									<h6
-										key="project-3-date"
+										key="projects.weather_bot.date"
 										class="text-center mt-1 lang"
 									>
 										Jun 2022 - Sep 2022 (4 months)
@@ -1530,7 +1547,7 @@
 									BeautifulSoup4, lxml)
 								</h6>
 								<!-- The project description -->
-								<h4 key="project-3" class="mt-3 px-2 lang">
+								<h4 key="projects.weather_bot.description" class="mt-3 px-2 lang">
 									The bot for searching information about the
 									weather in cities around the world (three
 									languages; mailing).
@@ -1541,7 +1558,7 @@
 								<a
 									target="_blank"
 									data-aos="zoom-in-up"
-									key="my-project-board"
+									key="projects.board"
 									href="https://portfolio.hubariev.com"
 									class="btn btn-lg btn-secondary opacity-1 text-white lang"
 								>
@@ -1558,7 +1575,7 @@
 						<div class="row">
 							<div class="col-12">
 								<h2
-									key="education"
+									key="sections.education"
 									data-aos="fade-up"
 									class="text-center text-uppercase mb-5 lang"
 								>
@@ -1571,27 +1588,27 @@
 								class="col-12 d-flex mb-2"
 								data-aos="fade-right"
 							>
-								<h4 key="university-degree" class="lang">
+								<h4 key="education.university.degree" class="lang">
 									Bachelor's degree
 								</h4>
-								<p key="university-date" class="ms-3 lang">
+								<p key="education.university.date" class="ms-3 lang">
 									Sep 2023 - Jul 2027 (3 years and 10 months)
 								</p>
 							</div>
 							<div class="col-12 mb-4" data-aos="fade-left">
 								<p class="fs-5">
-									<b key="computer-science" class="lang">
+									<b key="education.university.program" class="lang">
 										Computer Science from
 									</b>
 									<a
 										class="lang"
-										key="university"
+										key="education.university.name"
 										href="https://nure.ua"
 									>
 										Kharkiv National University of
 										Radioelectronics (NURE)
 									</a>
-									<span key="education-program" class="lang">
+									<span key="education.university.subprogram" class="lang">
 										with a focus on Information Management
 										Technologies.
 									</span>
@@ -1607,7 +1624,7 @@
 							>
 								<h3>
 									<a
-										key="courses"
+										key="education.courses.__title__"
 										target="_blank"
 										class="lang opacity-1"
 										href="https://drive.google.com/drive/folders/1OqaHaGMF7xjhnmljErlFfoNazV2ISk9Z?usp=sharing"
@@ -1623,7 +1640,7 @@
 													<a
 														class="lang"
 														target="_blank"
-														key="sololearn-course"
+														key="education.courses.sololearn"
 														href="https://www.sololearn.com/profile/24454481"
 													>
 														Sololearn's courses
@@ -1818,7 +1835,7 @@
 										<li>
 											<a
 												href=""
-												key="cs50-course"
+												key="education.courses.cs50"
 												data-bs-toggle="modal"
 												data-bs-target="#fileModal"
 												class="fileModal-link lang"
@@ -1833,7 +1850,7 @@
 										<li>
 											<a
 												href=""
-												key="nure-course"
+												key="education.courses.nure"
 												data-bs-toggle="modal"
 												data-bs-target="#fileModal"
 												class="fileModal-link lang"
@@ -1853,19 +1870,19 @@
 								class="col-lg-6 col-md-12"
 								data-aos="fade-left"
 							>
-								<h3 key="books" class="lang">Books</h3>
+								<h3 key="education.books.__title__" class="lang">Books</h3>
 								<div>
 									<ul>
 										<li>
 											'Byte of Python' - C. H. Swaroop
 										</li>
 										<li>
-											<span key="frameworks" class="lang">
+											<span key="education.books.frameworks.__title__" class="lang">
 												Frameworks
 											</span>
 											<ul>
 												<li
-													key="django-book"
+													key="education.books.frameworks.django"
 													class="lang"
 												>
 													'Django 3.0. The practice of
@@ -1873,7 +1890,7 @@
 													- Vladimir Dronov
 												</li>
 												<li
-													key="flask-book"
+													key="education.books.frameworks.flask"
 													class="lang"
 												>
 													'Flask web development'
@@ -1882,7 +1899,7 @@
 										</li>
 										<li>
 											<span
-												key="code-quality"
+												key="education.books.code_quality.__title__"
 												class="lang"
 											>
 												Code quality
@@ -1891,7 +1908,7 @@
 												<li>
 													<span
 														class="lang"
-														key="refactoring-book"
+														key="education.books.code_quality.refactoring"
 													>
 														'Refactoring'
 													</span>
@@ -1900,7 +1917,7 @@
 												<li>
 													<span
 														class="lang"
-														key="clean-code-book"
+														key="education.books.code_quality.clean_code"
 													>
 														'Clean Code'
 													</span>
@@ -1909,13 +1926,13 @@
 											</ul>
 										</li>
 										<li>
-											<span key="other" class="lang"
+											<span key="education.books.other.__title__" class="lang"
 												>Other</span
 											>
 											<ul>
 												<li>
 													<span
-														key="sql-book"
+														key="education.books.other.sql"
 														class="lang"
 													>
 														'SQL in 10 minutes'
@@ -1924,7 +1941,7 @@
 												</li>
 												<li>
 													<span
-														key="regex-book"
+														key="education.books.other.regex"
 														class="lang"
 													>
 														'Regex in 10 minutes'
@@ -1946,7 +1963,7 @@
 						<div class="row">
 							<div class="col-12">
 								<h2
-									key="write-me"
+									key="sections.write_me"
 									data-aos="fade-up"
 									class="text-center text-uppercase mb-5 lang"
 								>
@@ -1978,7 +1995,7 @@
 										/>
 										<label
 											class="lang"
-											key="name-field"
+											key="write_me.form.name"
 											for="floatingInput"
 										>
 											Name
@@ -1995,7 +2012,7 @@
 										/>
 										<label
 											class="lang"
-											key="email-field"
+											key="write_me.form.email"
 											for="floatingInput"
 										>
 											Email
@@ -2011,7 +2028,7 @@
 										/>
 										<label
 											class="lang"
-											key="subject-field"
+											key="write_me.form.subject"
 											for="floatingInput"
 										>
 											Subject
@@ -2028,7 +2045,7 @@
 										></textarea>
 										<label
 											class="lang"
-											key="body-field"
+											key="write_me.form.body"
 											for="floatingPassword"
 										>
 											Body
@@ -2040,7 +2057,7 @@
 											name="send"
 											value="Send"
 											type="submit"
-											key="send-btn"
+											key="write_me.form.send"
 											class="btn btn-lg btn-success lang"
 										>
 											Send
@@ -2120,9 +2137,8 @@
 				<div class="modal-content">
 					<div class="modal-header bg2">
 						<h1
-							key="pdf-resume"
 							id="fileModalLabel"
-							class="modal-title text-color fs-3 lang"
+							class="modal-title text-color fs-3"
 						>
 							<!-- modal-title -->
 						</h1>
