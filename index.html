@@ -2,11 +2,11 @@
 <html lang="en">
 	<head>
 		<!-- Script to check and redirect to the "hubariev.com" -->
-		<script>
+		<!-- <script>
 			if (window.location.hostname != "hubariev.com") {
 				window.open("https://hubariev.com", "_self");
 			}
-		</script>
+		</script> -->
 
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -775,7 +775,7 @@
 						<div class="row">
 							<!-- My backend skills -->
 							<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-								<h3 class="text-center" data-aos="flip-right">
+								<h3 id="skills.backend" class="text-center" data-aos="flip-right">
 									Backend
 								</h3>
 								<ul
@@ -861,7 +861,7 @@
 							</div>
 							<!-- My frontend skills -->
 							<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-								<h3 class="text-center" data-aos="flip-up">
+								<h3 id="skills.frontend" class="text-center" data-aos="flip-up">
 									Frontend
 								</h3>
 								<ul
@@ -948,8 +948,9 @@
 							<!-- My databases skills -->
 							<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
 								<h3
-									key="skills.db"
-									data-aos="flip-left"
+                                    key="skills.db"
+                                    data-aos="flip-left"
+                                    id="skills.databases"
 									class="text-center lang"
 								>
 									Databases
@@ -999,6 +1000,7 @@
 							<!-- My testing skills -->
 							<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
 								<h3
+                                    id="skills.testing"
 									key="skills.testing"
 									data-aos="flip-right"
 									class="text-center lang"
@@ -1059,6 +1061,7 @@
 							<!-- My version control systems skills -->
 							<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
 								<h3
+                                    id="skills.vcs"
 									data-aos="flip-up"
 									class="text-center lang"
 									key="skills.version_control_systems"
@@ -1133,7 +1136,7 @@
 							</div>
 							<!-- My DevOps skills -->
 							<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-								<h3 class="text-center" data-aos="flip-left">
+								<h3 id="skills.devops" class="text-center" data-aos="flip-left">
 									DevOps
 								</h3>
 								<ul
@@ -1203,7 +1206,7 @@
 								</ul>
 							</div>
 							<!-- My tools -->
-							<div class="col-12 mt-3">
+							<div id="skills.tools" class="col-12 mt-3">
 								<h3
 									key="skills.tools"
 									data-aos="flip-up"
@@ -1302,15 +1305,15 @@
 					</div>
 				</section>
 				<!-- The block with my experience -->
-				<section class="bg1" id="experience">
+				<section class="bg1" id="experience" style="padding-bottom: 0;">
 					<div class="container">
 						<!-- The title of the "Experience" block  -->
 						<div class="row">
 							<div class="col-12">
 								<h2
-									key="experience"
-									data-aos="fade-up"
-									class="text-center text-uppercase mb-5 lang"
+                                    data-aos="fade-up"
+									key="sections.experience"
+									class="text-center text-uppercase lang"
 								>
                                     Experience
 								</h2>
@@ -1318,37 +1321,97 @@
 						</div>
 						<!-- The content of the "Experience" block -->
 						<div class="row">
-							<div
-								class="col-12 d-flex mb-1"
-								data-aos="fade-right"
-							>
-								<h4 key="university-degree" class="lang">
-									Junior Python Web Developer
-								</h4>
-								<p key="university-date" class="ms-3 lang">
-									Jul 2023 - Jul 2024 (1 year)
-								</p>
-							</div>
-							<div
-								class="col-12 d-flex mb-2"
-								data-aos="fade-left"
-							>
-								<h5>
-									<a
-										class="lang"
-										key="experience-dzencode"
-										href="https://dzencode.com"
-									>
-										dZENcode
-									</a>
-								</h5>
-								<p key="university-date" class="ms-3 lang">
-									Kharkiv (remote)
-								</p>
-							</div>
-							<div class="col-12" data-aos="fade-right">
-								<p class="fs-5">...</p>
-							</div>
+							<div class="col-md-8 offset-md-2 col-12">
+                                <div class="timeline">
+                                    <div class="timeline-item">
+                                        <div class="timeline-item-content">
+                                            <h4
+                                                class="content-center lang"
+                                                key="experience.dzencode.position" 
+                                            >
+                                                Junior Python Web Developer
+                                            </h4>
+                                            <p class="d-flex align-items-center">
+                                                <ion-icon name="business"></ion-icon>
+                                                <a 
+                                                    target="_blank" 
+                                                    href="https://dzencode.com" 
+                                                    class="d-inline-block ms-2"
+                                                >
+                                                    dZENcode
+                                                </a>
+                                            </p>
+                                            <p class="d-flex align-items-center">
+                                                <ion-icon name="calendar"></ion-icon>
+                                                <span class="d-inline-block ms-2">
+                                                    <span class="lang" key="months.jul">Jul.</span> 
+                                                    2023 - 
+                                                    <span class="lang" key="months.jul">Jul.</span> 
+                                                    2024
+                                                </span>
+                                            </p>
+                                            <p>
+                                                <span class="lang" key="experience.soft_skills.__title__">
+                                                    Soft skills
+                                                </span>:
+                                                <i> 
+                                                    <span 
+                                                        class="lang"
+                                                        key="experience.soft_skills.teamwork" 
+                                                    >
+                                                        Teamwork
+                                                    </span>,   
+                                                    <span
+                                                        class="lang"
+                                                        key="experience.soft_skills.client"
+                                                    >
+                                                        Speaking with clients
+                                                    </span>.
+                                                </i>
+                                            </p>
+                                            <p>
+                                                <span class="lang" key="experience.hard_skills">
+                                                    Hard skills
+                                                </span>:
+                                                <i>
+                                                    Python | 
+                                                    Django (+ DRF), FastAPI, gRPC | 
+                                                    <a 
+                                                        href="#skills.frontend"
+                                                        class="text-decoration-none"
+                                                    >
+                                                        Frontend
+                                                    </a> | 
+                                                    SQL, PostgreSQL | 
+                                                    UnitTest | 
+                                                    <a 
+                                                        href="#skills.vcs"
+                                                        class="text-decoration-none lang"
+                                                        key="skills.version_control_systems" 
+                                                    >
+                                                        Version control systems
+                                                    </a> | 
+                                                    <a 
+                                                        key="skills.devops"
+                                                        href="#skills.devops"
+                                                        class="text-decoration-none lang" 
+                                                    >
+                                                        DevOps
+                                                    </a> | 
+                                                    <a 
+                                                        key="skills.tools" 
+                                                        href="#skills.tools"
+                                                        class="text-decoration-none lang"
+                                                    >
+                                                        Tools
+                                                    </a>.
+                                                </i>
+                                            </p>
+                                            <p>Description</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 						</div>
 					</div>
 				</section>
