@@ -105,38 +105,47 @@
 
 		<!-- All visible content -->
 		<div class="hide-on-print">
-			<!-- Theme toggler -->
-			<div id="theme_toggler" class="position-absolute">
-				<input
-					type="checkbox"
-					id="theme_toggler_btn"
-					class="checkbox opacity-0 position-absolute"
-				/>
-				<label class="label" for="theme_toggler_btn">
-					<ion-icon name="sunny"></ion-icon>
-					<ion-icon name="moon"></ion-icon>
-					<div class="ball"></div>
-				</label>
-			</div>
-			<!-- Language switchers -->
-			<a href="#" class="switch-language-btn">
-				<img
-					alt="Language image"
-					src="./static/images/languages/ukrainian.webp"
-					class="circle_icon language_switcher ua_switcher position-absolute"
-				/>
-			</a>
-			<a href="#" class="switch-language-btn">
-				<img
-					alt="Language image"
-					src="./static/images/languages/english.webp"
-					class="circle_icon language_switcher en_switcher position-absolute"
-				/>
-			</a>
+            <!-- Sticky control menu -->
+			<div id="control-menu" class="position-fixed w-100">
+				<nav class="navbar navbar-expand-lg navbar-dark">
+					<div class="container-fluid">
+                        <div id="theme_toggler">
+                            <input
+                                type="checkbox"
+                                id="theme_toggler_btn"
+                                class="checkbox opacity-0"
+                            />
+                            <label class="label" for="theme_toggler_btn">
+                                <ion-icon name="sunny"></ion-icon>
+                                <ion-icon name="moon"></ion-icon>
+                                <div class="ball"></div>
+                            </label>
+                        </div>
+                        <!-- Language switchers -->
+                        <div class="language-switchers">
+                            <a href="#" id="ua_switcher" class="switch-language-btn">
+                                <img
+                                    alt="Language image"
+                                    src="./static/images/languages/ukrainian.webp"
+                                    class="circle_icon language_switcher ua_switcher"
+                                />
+                            </a>
+                            <a href="#" id="en_switcher" class="switch-language-btn">
+                                <img
+                                    alt="Language image"
+                                    src="./static/images/languages/english.webp"
+                                    class="circle_icon language_switcher en_switcher"
+                                />
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <br><br>
 			<!-- The site header -->
-			<header class="py-5 border-bottom border-3">
-				<div class="container">
-					<div class="row content-center mb-3 mt-4">
+			<header class="pt-4 pb-5 border-bottom border-3" style="z-index: 92;">
+				<div class="container" style="z-index: 92;">
+					<div class="row content-center mb-3" style="z-index: 92;">
 						<!-- The block for my photo -->
 						<div class="col-md-6 col-sm-12 mb-4">
 							<div class="d-flex justify-content-center">
@@ -228,11 +237,6 @@
 			<div
 				id="navigation-menu"
 				class="position-relative"
-				style="
-					z-index: 90;
-					margin-top: -1px;
-					box-shadow: 0 10px 20px var(--bs-dark);
-				"
 			>
 				<nav class="navbar navbar-expand-lg navbar-dark">
 					<div class="container-fluid">
