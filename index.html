@@ -2,11 +2,11 @@
 <html lang="en">
 	<head>
 		<!-- Script to check and redirect to the "hubariev.com" -->
-		<script>
+		<!-- <script>
 			if (window.location.hostname != "hubariev.com") {
 				window.open("https://hubariev.com", "_self");
 			}
-		</script>
+		</script> -->
 
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -255,8 +255,14 @@
 						<a
 							href="#"
 							id="navbar-brand"
-							class="navbar-brand text-white d-none"
+							class="navbar-brand text-white d-none align-items-center"
 						>
+							<img
+								alt="My photo"
+								src="./static/images/my-photo.webp"
+								class="my_photo img-fluid"
+								onerror="this.onerror=null; this.src='./static/images/default-photo.webp';"
+							/>
 							<b class="lang" key="full_name">
 								Nikita Hubariev
 							</b>
