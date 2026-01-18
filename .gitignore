@@ -1,9 +1,1 @@
 .vscode
-
-# Ignore .css and .js files
-*.css
-*.js
-
-# Include .min.css and .min.js files
-!*.min.css
-!*.min.js
