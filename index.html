@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
 		<!-- Script to check and redirect to the "hubariev.com" -->
@@ -168,7 +168,11 @@
 									data-aos-duration="800"
 									src="./static/images/my-photo.webp"
 									class="my_photo img-fluid w-50 rounded-4"
-									onerror="this.onerror=null; this.src='./static/images/default-photo.webp';"
+									onerror="
+										this.onerror = null;
+										this.src =
+											'./static/images/default-photo.webp';
+									"
 								/>
 							</div>
 						</div>
@@ -261,7 +265,11 @@
 								alt="My photo"
 								src="./static/images/my-photo.webp"
 								class="my_photo img-fluid"
-								onerror="this.onerror=null; this.src='./static/images/default-photo.webp';"
+								onerror="
+									this.onerror = null;
+									this.src =
+										'./static/images/default-photo.webp';
+								"
 							/>
 							<b class="lang" key="full_name">
 								Nikita Hubariev
@@ -1518,19 +1526,10 @@
 													name="calendar"
 												></ion-icon>
 												<span
-													class="d-inline-block ms-2"
+													key="experience.meest.date"
+													class="lang d-inline-block ms-2"
 												>
-													<span
-														class="lang"
-														key="months.aug"
-														>Aug.</span
-													>
-													2025 -
-													<span
-														class="lang"
-														key="months.present"
-														>Present</span
-													>
+													August 2025 - Present
 												</span>
 											</p>
 											<p>
@@ -1610,20 +1609,11 @@
 													name="calendar"
 												></ion-icon>
 												<span
-													class="d-inline-block ms-2"
+													key="experience.admiral.date"
+													class="lang d-inline-block ms-2"
 												>
-													<span
-														class="lang"
-														key="months.nov"
-														>Nov.</span
-													>
-													2024 -
-													<span
-														class="lang"
-														key="months.aug"
-														>Aug.</span
-													>
-													2025
+													August 2024 - August 2025 (1
+													year)
 												</span>
 											</p>
 											<p>
@@ -1736,20 +1726,11 @@
 													name="calendar"
 												></ion-icon>
 												<span
-													class="d-inline-block ms-2"
+													key="experience.dzencode.date"
+													class="lang d-inline-block ms-2"
 												>
-													<span
-														class="lang"
-														key="months.jul"
-														>Jul.</span
-													>
-													2023 -
-													<span
-														class="lang"
-														key="months.jul"
-														>Jul.</span
-													>
-													2024
+													July 2023 - July 2024 (1
+													year)
 												</span>
 											</p>
 											<p>
@@ -1961,7 +1942,7 @@
 										key="projects.lapzone.date"
 										class="text-center mt-1 lang"
 									>
-										Mar 2023 - Jun 2023 (4 months)
+										March 2023 - June 2023 (4 months)
 									</h6>
 								</div>
 								<!-- The project technologies -->
@@ -2012,7 +1993,7 @@
 										key="projects.itish.date"
 										class="text-center mt-1 lang"
 									>
-										Nov 2022 - Jan 2023 (3 months)
+										November 2022 - January 2023 (3 months)
 									</h6>
 								</div>
 								<!-- The project technologies -->
@@ -2063,7 +2044,7 @@
 										key="projects.weather_bot.date"
 										class="text-center mt-1 lang"
 									>
-										Jun 2022 - Sep 2022 (4 months)
+										June 2022 - September 2022 (4 months)
 									</h6>
 								</div>
 								<!-- The project technologies -->
@@ -2127,7 +2108,8 @@
 									key="education.university.date"
 									class="ms-3 lang"
 								>
-									Sep 2023 - Jul 2027 (3 years and 10 months)
+									September 2023 - July 2027 (3 years and 10
+									months)
 								</p>
 							</div>
 							<div class="col-12 mb-4" data-aos="fade-left">
@@ -2399,8 +2381,8 @@
 												modal-title-ua="Сертифікат 'Програмування на C++' від ХНУРЕ"
 												modal-file-link="https://drive.google.com/file/d/13JsyvhnhhnVqo27h2E08lzbQ1MfPA67d/preview"
 											>
-												Optional course NURE (Nov. 2021
-												- May 2022)
+												Optional course NURE (November
+												2021 - May 2022)
 											</a>
 										</li>
 									</ul>
