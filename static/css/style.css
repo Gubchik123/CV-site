@@ -402,22 +402,7 @@ ion-icon[name="logo-whatsapp"] {
 .timeline-item-content h4 {
 	padding: 10px 0 5px 0;
 }
-[data-aos="fade-down-lg_fade-right-md"],
-[data-aos="fade-up-lg_fade-left-md"] {
-	opacity: 0;
-	transition-property: transform, opacity;
-}
-[data-aos="fade-down-lg_fade-right-md"] {
-	transform: translate(0, -20%);
-}
-[data-aos="fade-up-lg_fade-left-md"] {
-	transform: translate(0, 20%);
-}
-[data-aos="fade-down-lg_fade-right-md"].aos-animate,
-[data-aos="fade-up-lg_fade-left-md"].aos-animate {
-	opacity: 1;
-	transform: translate(0, 0);
-}
+
 .project {
 	display: flex;
 	flex-direction: column;
@@ -569,12 +554,6 @@ footer {
 @media screen and (max-width: 992px) {
 	.project {
 		width: 100%;
-	}
-	[data-aos="fade-down-lg_fade-right-md"] {
-		transform: translate(-20%, 0);
-	}
-	[data-aos="fade-up-lg_fade-left-md"] {
-		transform: translate(20%, 0);
 	}
 }
 .my-position {
