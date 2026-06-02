@@ -54,12 +54,12 @@
 			href="./static/css/aos.min.css"
 		/>
 
-		<!-- Google font "Open Sans" -->
+		<!-- Google font "Inter" -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
 			rel="stylesheet"
-			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
 		/>
 
 		<!-- My CSS files with styles -->
@@ -87,22 +87,6 @@
 				src="./static/images/resume.webp"
 			/>
 		</div>
-
-		<!-- Full screen loader -->
-		<div
-			id="screen-loader"
-			style="z-index: 100; top: 0; left: 0"
-			class="d-flex content-center h-100 w-100 position-fixed bg1"
-		>
-			<div
-				role="status"
-				class="spinner-border text-color"
-				style="width: 3rem; height: 3rem"
-			></div>
-		</div>
-
-		<!-- Script to display "Welcome" and hide the screen loader -->
-		<script src="./static/js/screen_load.min.js"></script>
 
 		<!-- All visible content -->
 		<div class="hide-on-print">
@@ -163,9 +147,7 @@
 							<div class="d-flex justify-content-center">
 								<img
 									alt="My photo"
-									data-aos="zoom-in"
-									data-aos-delay="2000"
-									data-aos-duration="800"
+									data-aos="fade-up"
 									src="./static/images/my-photo.webp"
 									class="my_photo img-fluid w-50 rounded-4"
 									onerror="
@@ -187,8 +169,6 @@
 										class="lang"
 										key="full_name"
 										data-aos="fade-down"
-										data-aos-delay="2000"
-										data-aos-duration="800"
 									>
 										Nikita Hubariev
 									</h2>
@@ -203,8 +183,6 @@
 										href=""
 										title="PDF"
 										data-aos="fade-right"
-										data-aos-delay="2000"
-										data-aos-duration="800"
 										data-bs-toggle="modal"
 										data-bs-target="#fileModal"
 										class="fileModal-link btn btn-lg btn-secondary me-3 opacity-1 text-white content-center"
@@ -220,8 +198,6 @@
 									<button
 										title="Print"
 										data-aos="fade-up"
-										data-aos-delay="2000"
-										data-aos-duration="800"
 										onClick="window.print()"
 										class="fileModal-link btn btn-lg btn-secondary me-3 opacity-1 text-white content-center"
 									>
@@ -234,8 +210,6 @@
 										target="_blank"
 										title="Download"
 										data-aos="fade-left"
-										data-aos-delay="2000"
-										data-aos-duration="800"
 										class="fileModal-link btn btn-lg btn-secondary me-3 opacity-1 text-white content-center"
 										href="https://drive.usercontent.google.com/uc?id=1KC1H2Lz0LwND8n6KBD2v40dTbw5m44Ol&export=download"
 									>
@@ -838,7 +812,7 @@
 								<h3
 									id="skills.backend"
 									class="text-center"
-									data-aos="flip-right"
+									data-aos="fade-up"
 								>
 									Backend
 								</h3>
@@ -943,7 +917,7 @@
 								<h3
 									id="skills.frontend"
 									class="text-center"
-									data-aos="flip-up"
+									data-aos="fade-up"
 								>
 									Frontend
 								</h3>
@@ -1046,7 +1020,7 @@
 							<!-- My databases skills -->
 							<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
 								<h3
-									data-aos="flip-left"
+									data-aos="fade-up"
 									id="skills.databases"
 									class="text-center lang"
 									key="skills.db.__title__"
@@ -1169,7 +1143,7 @@
 								<h3
 									id="skills.testing"
 									key="skills.testing"
-									data-aos="flip-right"
+									data-aos="fade-up"
 									class="text-center lang"
 								>
 									Testing
@@ -1229,7 +1203,7 @@
 							<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
 								<h3
 									id="skills.vcs"
-									data-aos="flip-up"
+									data-aos="fade-up"
 									class="text-center lang"
 									key="skills.version_control_systems"
 								>
@@ -1306,7 +1280,7 @@
 								<h3
 									id="skills.devops"
 									class="text-center"
-									data-aos="flip-left"
+									data-aos="fade-up"
 								>
 									DevOps
 								</h3>
@@ -1380,7 +1354,7 @@
 							<div id="skills.tools" class="col-12 mt-3">
 								<h3
 									key="skills.tools"
-									data-aos="flip-up"
+									data-aos="fade-up"
 									class="text-center lang"
 								>
 									Tools
